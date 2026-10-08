@@ -286,7 +286,7 @@
         "username": "Eternal l Fr!qheR^!"
       },
       "attendances": {
-        "confirmed": 241,
+        "confirmed": 240,
         "unsure": 12,
         "vtcs": 32
       },
@@ -680,7 +680,7 @@
         "username": "Eternal l Fr!qheR^!"
       },
       "attendances": {
-        "confirmed": 525,
+        "confirmed": 524,
         "unsure": 14,
         "vtcs": 85
       },
@@ -931,7 +931,7 @@
         "username": "Eternal l Fr!qheR^!"
       },
       "attendances": {
-        "confirmed": 232,
+        "confirmed": 230,
         "unsure": 2,
         "vtcs": 35
       },
@@ -982,9 +982,9 @@
         "username": "Eternal l Fr!qheR^!"
       },
       "attendances": {
-        "confirmed": 174,
+        "confirmed": 181,
         "unsure": 3,
-        "vtcs": 44
+        "vtcs": 43
       },
       "dlcs": [],
       "url": "/events/35049-eternal-transport|-october-convoy2026",
@@ -1001,8 +1001,8 @@
       "slug": "35882-eternal-transport|-november-convoy2026",
       "game": "ETS2",
       "server": {
-        "id": 0,
-        "name": "To be determined"
+        "id": 14,
+        "name": "Event Server"
       },
       "language": "English",
       "departure": {
@@ -1027,11 +1027,11 @@
         "name": "ETERNAL TRANSPORT™"
       },
       "user": {
-        "id": 5088646,
-        "username": "Assettodobo"
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
       },
       "attendances": {
-        "confirmed": 145,
+        "confirmed": 146,
         "unsure": 1,
         "vtcs": 37
       },
@@ -1040,7 +1040,7 @@
       },
       "url": "/events/35882-eternal-transport|-november-convoy2026",
       "created_at": "2026-05-23 18:32:27",
-      "updated_at": "2026-08-11 12:34:55"
+      "updated_at": "2026-10-04 17:16:28"
     },
     {
       "id": 36123,
@@ -1078,20 +1078,20 @@
         "name": "ETERNAL TRANSPORT™"
       },
       "user": {
-        "id": 5088646,
-        "username": "Assettodobo"
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
       },
       "attendances": {
-        "confirmed": 129,
+        "confirmed": 131,
         "unsure": 1,
-        "vtcs": 36
+        "vtcs": 37
       },
       "dlcs": {
         "304212": "Scandinavia"
       },
       "url": "/events/36123-eternal-transport|-winter-convoy2026",
       "created_at": "2026-06-05 21:13:14",
-      "updated_at": "2026-08-11 12:52:00"
+      "updated_at": "2026-09-27 10:55:50"
     },
     {
       "id": 37044,
@@ -1133,9 +1133,9 @@
         "username": "Macik Mucuk"
       },
       "attendances": {
-        "confirmed": 98,
+        "confirmed": 104,
         "unsure": 2,
-        "vtcs": 44
+        "vtcs": 47
       },
       "dlcs": [],
       "url": "/events/37044-eternal-transport|-january-convoy",
@@ -1182,9 +1182,9 @@
         "username": "Eternal l Fr!qheR^!"
       },
       "attendances": {
-        "confirmed": 91,
+        "confirmed": 100,
         "unsure": 0,
-        "vtcs": 31
+        "vtcs": 35
       },
       "dlcs": {
         "2780810": "Nordic Horizons"
@@ -1233,9 +1233,9 @@
         "username": "Eternal l Fr!qheR^!"
       },
       "attendances": {
-        "confirmed": 54,
+        "confirmed": 73,
         "unsure": 1,
-        "vtcs": 23
+        "vtcs": 32
       },
       "dlcs": {
         "1209460": "Iberia"
@@ -1243,6 +1243,55 @@
       "url": "/events/37942-eternal-transport|-march-convoy",
       "created_at": "2026-09-17 11:54:54",
       "updated_at": "2026-09-19 12:45:38"
+    },
+    {
+      "id": 38198,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | Bus Convoy 2026",
+      "slug": "38198-eternal-transport|-bus-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 0,
+        "name": "To be determined"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Calais"
+      },
+      "arrive": {
+        "location": "City",
+        "city": "Dijon"
+      },
+      "meetup_at": "2026-12-16 17:00:00",
+      "start_at": "2026-12-16 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/38198.1790955326.png",
+      "map": "https://static.truckersmp.com/images/event/map/38198.1790955327.png",
+      "description": "[![](https://i.vgy.me/mu2WXn.png)](https://discord.gg/eternaltransport)\r\n[![](https://cdn.plvtc.com/cdn/NeedCC/needccBanner.png)](https://discord.gg/557ZjB7YgS)",
+      "rule": null,
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 67,
+        "unsure": 1,
+        "vtcs": 9
+      },
+      "dlcs": [],
+      "url": "/events/38198-eternal-transport|-bus-convoy2026",
+      "created_at": "2026-10-02 15:35:26",
+      "updated_at": "2026-10-02 15:53:59"
     }
   ]
 }
