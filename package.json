@@ -1,0 +1,9 @@
+{
+  "name": "etwebv3",
+  "version": "1.0.0",
+  "description": "Eternal Websites v3.0",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}

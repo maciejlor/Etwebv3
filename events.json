@@ -1,0 +1,1248 @@
+{
+  "error": false,
+  "response": [
+    {
+      "id": 24935,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "ETERNAL TRANSPORT 1ST ANNIVERSARY CONVOY | 2025",
+      "slug": "24935-eternal-transport1st-anniversary-convoy|2025",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "&Venice (Slots)",
+        "city": "Verona"
+      },
+      "arrive": {
+        "location": "Strazburg (Mine)",
+        "city": "Strasbourg"
+      },
+      "meetup_at": "2025-04-29 17:00:00",
+      "start_at": "2025-04-29 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/24935.1741889505.png",
+      "map": "https://static.truckersmp.com/images/event/map/24935.1740943295.png",
+      "description": "![](https://i.imgur.com/rOymqa1.png)\r\n\r\n\r\n\r\n‏‎‏‎‏‏‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‏",
+      "rule": "### Event Rules for Participants\r\n* Only approved event staff can use the following tags in their player tags: \"1YR Eternal | EM\", \"1YR Eternal | ES\", \"1YR Eternal | Lead\", \"1YR Eternal | Tail\", \"1YR Eternal | CC\", \"1YR Eternal | Media\", \"1YR Eternal | GM\" or Simlar .\r\n* Impersonating event staff using the aforementioned tags is forbidden.\r\n* Participants must follow event staff instructions.\r\n* Participants must haul a trailer and dismiss it at the destination. (Except for Event Staff)\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars are prohibited, except for Event Staff with a clear tag.\r\n* Overtaking is prohibited.\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Free roaming on the server is prohibited.\r\n* Participants must ignore traffic lights unless it is unsafe to do so.\r\n* Participants should park in their designated slots. If you don't have a designated slot, you must park in the \"Public Parking\" area.\r\n* Convoy participants must only leave the starting location when instructed to do so, in an orderly one-by-one manner.\r\n* All other TruckersMP rules apply.\r\n\r\n### Event Rules for Event Staff:\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 280,
+        "unsure": 8,
+        "vtcs": 35
+      },
+      "dlcs": [],
+      "url": "/events/24935-eternal-transport1st-anniversary-convoy|2025",
+      "created_at": "2024-09-29 12:12:07",
+      "updated_at": "2025-04-09 13:00:52"
+    },
+    {
+      "id": 24936,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "ETERNAL TRANSPORT™ NOVEMBER CONVOY | 2024",
+      "slug": "24936-eternal-transport™-november-convoy|2024",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Stuttgart (Slots)",
+        "city": "Stuttgart"
+      },
+      "arrive": {
+        "location": "Milano (CargoTras)",
+        "city": "Milan"
+      },
+      "meetup_at": "2024-11-07 17:00:00",
+      "start_at": "2024-11-07 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/24936.1727723120.png",
+      "map": "https://static.truckersmp.com/images/event/map/24936.1727616858.png",
+      "description": "![](https://r.resimlink.com/vJ1FGZPUj8p.png)\r\n\r\n\r\n![](https://r.resimlink.com/0aRbEJrAQhLY.png)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n.",
+      "rule": "Event Rules for Participants:\r\n* The Event Staff are recognized as; “ELITE | Founder ,ELITE | Manager ,ELITE  | Supervisor , ELITE | CC , ELITE  | Media , ELITE  | GMs or similar\".\r\n* Impersonating Event Staff using the aforementioned tags is forbidden.\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars and Bus are prohibited except for event staff showing a clear tag.\r\n* Participants must haul a trailer. (Except Event Staff)\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Overtaking is prohibited. (Except Event Staff)\r\n* Participants must follow Event Staff instructions.\r\n* Participants must follow Event Staff instructions.\r\n* Participants should park at their designated slots. If you don't have a designated slot you are required to park in the 'Public Parking' area.\r\n* Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n* All other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://eternaltransports.wixsite.com/eternal-transport",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 133,
+        "unsure": 2,
+        "vtcs": 12
+      },
+      "dlcs": [],
+      "url": "/events/24936-eternal-transport%E2%84%A2-november-convoy|2024",
+      "created_at": "2024-09-29 13:08:00",
+      "updated_at": "2024-10-05 15:37:32"
+    },
+    {
+      "id": 25552,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "ETERNAL TRANSPORT BIG BOSS KERIM IS BACK - Convoy",
+      "slug": "25552-eternal-transport-big-boss-kerim-is-back--convoy",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Leipzig (Slots)",
+        "city": "Leipzig"
+      },
+      "arrive": {
+        "location": "Amsterdam (port)",
+        "city": "Amsterdam"
+      },
+      "meetup_at": "2025-02-20 17:00:00",
+      "start_at": "2025-02-20 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/25552.1733505288.png",
+      "map": "https://static.truckersmp.com/images/event/map/25552.1734957906.png",
+      "description": "[![](https://i.imgur.com/WayW0Xe.jpeg)](https://discord.gg/eZ5y6Ajq)\r\n![](https://images-ext-1.discordapp.net/external/1BrGQcs7NX6JInodDjE3kXKELoWrplXJyf7xZxmd5BI/https/i.imgur.com/v2LgrLqh.jpg?format=webp)",
+      "rule": "### :construction: |  Event Rules for Participants:\r\n* Only approved event staff can use the following tags in their player tags: \"Eternal | EM'',  \"Eternal | ES, \"Eternal | Lead\", \"Eternal |  Tail\", \"Eternal | CC\", \"Eternal | | Media'', \"Eternal |  GM'' \r\n* Impersonating Event Staff using the aforementioned tags is forbidden.\r\n* Participants must follow Event Staff instructions.\r\n* Participants must haul a trailer and dismiss their trailer at the end Destination. (Except Event Staff)\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars are prohibited except for Event Staff showing a clear tag.\r\n* Overtaking is prohibited Except for Event Staff.\r\n* Advertising is prohibited Except for Event Staff.\r\n* Free roaming on the server is prohibited Except for Event Staff.\r\n* Participants must ignore traffic lights unless it is unsafe to do so.\r\n* Participants should park at their designated slots. If you don't have a designated slot you are required to park in the 'Public Parking' area.\r\n* Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n* All other TruckerMP rules apply.\r\n\r\n### 👷🏼‍ | Event Rules for Event Staff: \r\n* Event staff can block intersections and roads approaching the intersection in order to direct the convoy.\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* All other TruckerMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://eternaltransports.wixsite.com/eternal-transport",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 172,
+        "unsure": 8,
+        "vtcs": 22
+      },
+      "dlcs": [],
+      "url": "/events/25552-eternal-transport-big-boss-kerim-is-back--convoy",
+      "created_at": "2024-10-29 11:23:22",
+      "updated_at": "2025-01-18 11:31:45"
+    },
+    {
+      "id": 25969,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | Spring Convoy 2025",
+      "slug": "25969-eternal-transport|-spring-convoy2025",
+      "game": "ETS2",
+      "server": {
+        "id": 18,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Kassel (Slots)",
+        "city": "Kassel"
+      },
+      "arrive": {
+        "location": "Strasbourg (Mine)",
+        "city": "Strasbourg"
+      },
+      "meetup_at": "2025-05-29 17:00:00",
+      "start_at": "2025-05-29 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/25969.1742660852.png",
+      "map": "https://static.truckersmp.com/images/event/map/25969.1742225074.png",
+      "description": "-----\r\n\r\n\r\n[![](https://i.imgur.com/IilhVjm.png)](https://discord.gg/eternaltransport)\r\n\r\n\r\n\r\n-----",
+      "rule": "### Event Rules for Participants\r\n* Only approved event staff can use the following tags in their player tags: \"Eternal| EM\", \" Eternal | ES\", \"Eternal | Lead\", \"Eternal | Tail\", \"Eternal | CC\", \"Eternal | Media\", \"Eternal | GM\" or Simlar .\r\n* Impersonating event staff using the aforementioned tags is forbidden.\r\n* Participants must follow event staff instructions.\r\n* Participants must haul a trailer and dismiss it at the destination. (Except for Event Staff)\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars are prohibited, except for Event Staff with a clear tag.\r\n* Overtaking is prohibited.\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Free roaming on the server is prohibited.\r\n* Participants must ignore traffic lights unless it is unsafe to do so.\r\n* Participants should park in their designated slots. If you don't have a designated slot, you must park in the \"Public Parking\" area.\r\n* Convoy participants must only leave the starting location when instructed to do so, in an orderly one-by-one manner.\r\n* All other TruckersMP rules apply.\r\n\r\n### Event Rules for Event Staff:\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 197,
+        "unsure": 7,
+        "vtcs": 25
+      },
+      "dlcs": [],
+      "url": "/events/25969-eternal-transport|-spring-convoy2025",
+      "created_at": "2024-11-23 11:07:05",
+      "updated_at": "2025-05-10 19:41:44"
+    },
+    {
+      "id": 25970,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | June Convoy 2025",
+      "slug": "25970-eternal-transport|-june-convoy2025",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Erfurt"
+      },
+      "arrive": {
+        "location": "SteinBruch",
+        "city": "Graz"
+      },
+      "meetup_at": "2025-06-29 17:00:00",
+      "start_at": "2025-06-29 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/25970.1746267562.png",
+      "map": "https://static.truckersmp.com/images/event/map/25970.1742225178.png",
+      "description": "[![](https://i.imgur.com/Yw2iMJz.png)](https://discord.gg/eternaltransport)",
+      "rule": "## Event Rules for Participants \r\n* Only approved event staff can use the following tags in their player tags: \"Eternal| EM\", \" Eternal | ES\", \"Eternal | Lead\", \"Eternal | Tail\", \"Eternal | CC\", \"Eternal | Media\", \"Eternal | GM\" or Simlar.\r\n* Impersonating event staff using the aforementioned tags is forbidden.\r\n* Participants must follow event staff instructions.\r\n* Participants must haul a trailer and dismiss it at the destination. (Except for Event Staff)\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars are prohibited, except for Event Staff with a clear tag.\r\n* Overtaking is prohibited.\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Free roaming on the server is prohibited.\r\n* Participants must ignore traffic lights unless it is unsafe to do so.\r\n* Participants should park in their designated slots. If you don't have a designated slot, you must park in the \"Public Parking\" area.\r\n* Convoy participants must only leave the starting location when instructed to do so, in an orderly one-by-one manner.\r\n* All other TruckersMP rules apply.\r\n\r\n## Event Rules for Event Staff:\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 208,
+        "unsure": 10,
+        "vtcs": 33
+      },
+      "dlcs": [],
+      "url": "/events/25970-eternal-transport|-june-convoy2025",
+      "created_at": "2024-11-23 11:09:30",
+      "updated_at": "2025-06-08 16:34:18"
+    },
+    {
+      "id": 25971,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | Summer Convoy 2025",
+      "slug": "25971-eternal-transport|-summer-convoy2025",
+      "game": "ETS2",
+      "server": {
+        "id": 18,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Lyon (Slots)",
+        "city": "Lyon"
+      },
+      "arrive": {
+        "location": "Metz",
+        "city": "Metz"
+      },
+      "meetup_at": "2025-07-31 17:00:00",
+      "start_at": "2025-07-31 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/25971.1742661177.png",
+      "map": "https://static.truckersmp.com/images/event/map/25971.1746177012.png",
+      "description": "[![](https://i.imgur.com/VYd8sKF.png)](https://discord.gg/eternaltransport)\r\n\r\n-----",
+      "rule": "## Event Rules for Participants \r\n\r\n* Only approved event staff can use the following tags in their player tags: \"Eternal | EM\", \" Eternal | ES\", \"Eternal | Lead\", \"Eternal | Tail\", \"Eternal | CC\", \"Eternal | Media\", \"Eternal | GM\" or Simlar.\r\n* Impersonating event staff using the aforementioned tags is forbidden.\r\n* Participants must follow event staff instructions.\r\n* Participants must haul a trailer and dismiss it at the destination. (Except for Event Staff)\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars are prohibited, except for Event Staff with a clear tag.\r\n* Overtaking is prohibited.\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Free roaming on the server is prohibited.\r\n* Participants must ignore traffic lights unless it is unsafe to do so.\r\n* Participants should park in their designated slots. If you don't have a designated slot, you must park in the \"Public Parking\" area.\r\n* Convoy participants must only leave the starting location when instructed to do so, in an orderly one-by-one manner.\r\n* All other TruckersMP rules apply.\r\n\r\n## Event Rules for Event Staff:\r\n\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 241,
+        "unsure": 12,
+        "vtcs": 32
+      },
+      "dlcs": [],
+      "url": "/events/25971-eternal-transport|-summer-convoy2025",
+      "created_at": "2024-11-23 11:14:39",
+      "updated_at": "2025-07-18 13:55:53"
+    },
+    {
+      "id": 26578,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | August Convoy 2025",
+      "slug": "26578-eternal-transport|-august-convoy2025",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Dresden"
+      },
+      "arrive": {
+        "location": "Euro Acress",
+        "city": "Osnabrück"
+      },
+      "meetup_at": "2025-08-27 17:00:00",
+      "start_at": "2025-08-27 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/26578.1746267587.png",
+      "map": "https://static.truckersmp.com/images/event/map/26578.1744203603.png",
+      "description": "[![](https://i.imgur.com/FLZnt82.png)](https://eternaltransport.com/events/august)",
+      "rule": "### 🚧 | Event Rules for Participants:\r\n\r\n* Only approved event staff can use the following tags in their player tags: \"Eternal | EM\", \" Eternal | ES\", \"Eternal | Lead\", \"Eternal | Tail\", \"Eternal | CC\", \"Eternal | Media\", \"Eternal | GM\", \"Eternal | RO\", \"Eternal | ROM\" or Simlar.\r\n* Impersonating event staff using the aforementioned tags is forbidden.\r\n* Participants must follow event staff instructions.\r\n* Participants must haul a trailer and dismiss it at the destination. (Except for Event Staff)\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars are prohibited, except for Event Staff with a clear tag.\r\n* Overtaking is prohibited.\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Free roaming on the server is prohibited.\r\n* Participants must ignore traffic lights unless it is unsafe to do so.\r\n* Participants should park in their designated slots. If you don't have a designated slot, you must park in the \"Public Parking\" area.\r\n* Convoy participants must only leave the starting location when instructed to do so, in an orderly one-by-one manner.\r\n* All other TruckersMP rules apply.\r\n\r\n### 👷🏼‍ | Event Rules for Event Staff:\r\n\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* All other TruckersMP rules apply.\r\n\r\n### Real Operations:\r\n> Four (4) \"Real Operations\" scenarios have been approved by TruckersMP Event Management. This includes four (4) on a highway only. All operations have been reviewed and approved in line with our official rules. Any concerns regarding the actions or operations carried out by the Event Staff using the aforementioned tags should be directed to TruckersMP Event Management.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 5462922,
+        "username": "Eternal l AthenaBeyy"
+      },
+      "attendances": {
+        "confirmed": 210,
+        "unsure": 10,
+        "vtcs": 35
+      },
+      "dlcs": [],
+      "url": "/events/26578-eternal-transport|-august-convoy2025",
+      "created_at": "2024-12-31 18:27:58",
+      "updated_at": "2025-08-27 06:08:10"
+    },
+    {
+      "id": 26579,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | September Convoy 2025",
+      "slug": "26579-eternal-transport|-september-convoy2025",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Reims"
+      },
+      "arrive": {
+        "location": "SteinBruch",
+        "city": "Zürich"
+      },
+      "meetup_at": "2025-09-03 17:00:00",
+      "start_at": "2025-09-03 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/26579.1746267618.png",
+      "map": "https://static.truckersmp.com/images/event/map/26579.1744216570.png",
+      "description": "## Event Information \r\n\r\n📅 **Date:** September 3, 2025  \r\n\r\n📍 **Start City:** Reims (Slots)  \r\n\r\n⏰ **Meetup Time:** 17:00 UTC  \r\n\r\n🚛 **Departure Time:** 18:00 UTC\r\n\r\n🏁 **Destination:** Zurich (SteinBruch) \r\n\r\n🛑 **DLC:** None\r\n\r\n## Event Route\r\n\r\n![](https://static.truckersmp.com/images/event/map/26579.1744216570.png)\r\n\r\n\r\n-----\r\n\r\n## Event Control by \r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)",
+      "rule": "Event Rules for Participants:\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply..\r\n\r\nEvent Rules for Event Staff:\r\n Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 5462922,
+        "username": "Eternal l AthenaBeyy"
+      },
+      "attendances": {
+        "confirmed": 222,
+        "unsure": 4,
+        "vtcs": 35
+      },
+      "dlcs": [],
+      "url": "/events/26579-eternal-transport|-september-convoy2025",
+      "created_at": "2024-12-31 18:36:48",
+      "updated_at": "2025-08-21 18:42:03"
+    },
+    {
+      "id": 28542,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | October Convoy 2025",
+      "slug": "28542-eternal-transport|-october-convoy2025",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "(Milan) Slots",
+        "city": "Turin"
+      },
+      "arrive": {
+        "location": "(Euro Acress)",
+        "city": "Zürich"
+      },
+      "meetup_at": "2025-10-30 17:00:00",
+      "start_at": "2025-10-30 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/28542.1746044101.png",
+      "map": "https://static.truckersmp.com/images/event/map/28542.1746044102.png",
+      "description": "[![](https://i.ibb.co/995jjjMG/Frame-1601805.png)](https://discord.gg/eternaltransport)\r\n\r\n[![](https://i.imgur.com/O7HzTg7.jpg)](https://discord.gg/supercc)",
+      "rule": "### Event Rules for Participants\r\n* The Event Staff are recognized as: “Super | CC” “Super | ES” “Super | EA” “Super | Lead” “Super | Co-Lead” “Super | Tail” “Super | Co-Tail” “Super | Media” “Super | GM”or similar.\r\n* Free roaming is prohibited.\r\n* Participants must haul a trailer.\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Participants should park at their designated slots. If you don't have a designated slot you are required to park in the 'Public Parking' area.\r\n* Overtaking is prohibited.\r\n* Cars are prohibited except for event staff showing a clear tag.\r\n* All other TruckersMP rules apply.\r\n\r\n### Event Rules for Event Staff\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 256,
+        "unsure": 8,
+        "vtcs": 35
+      },
+      "dlcs": [],
+      "url": "/events/28542-eternal-transport|-october-convoy2025",
+      "created_at": "2025-04-30 20:15:01",
+      "updated_at": "2025-10-12 11:01:19"
+    },
+    {
+      "id": 28885,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | November Convoy 2025",
+      "slug": "28885-eternal-transport|-november-convoy2025",
+      "game": "ETS2",
+      "server": {
+        "id": 41,
+        "name": "Simulation 2"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Strasbourg"
+      },
+      "arrive": {
+        "location": "IKA",
+        "city": "Munich"
+      },
+      "meetup_at": "2025-11-20 17:00:00",
+      "start_at": "2025-11-20 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/28885.1749499587.png",
+      "map": "https://static.truckersmp.com/images/event/map/28885.1749127114.png",
+      "description": "[![](https://i.ibb.co/j90Xjx9b/Frame-1601804.png)](https://discord.gg/eternaltransport)\r\n\r\n\r\n-----\r\n\r\n\r\n\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)",
+      "rule": "Event Rules for Participants:\r\n\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply..\r\n\r\nEvent Rules for Event Staff:\r\n\r\n\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 4681383,
+        "username": "Macik Mucuk"
+      },
+      "attendances": {
+        "confirmed": 199,
+        "unsure": 3,
+        "vtcs": 31
+      },
+      "dlcs": [],
+      "url": "/events/28885-eternal-transport|-november-convoy2025",
+      "created_at": "2025-05-23 20:43:47",
+      "updated_at": "2025-11-17 22:30:03"
+    },
+    {
+      "id": 29344,
+      "event_type": {
+        "key": "truck_show_and_convoy",
+        "name": "Truckfest And Convoy"
+      },
+      "name": "Eternal | Winter Convoy 2025",
+      "slug": "29344-eternal|-winter-convoy2025",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Klagenfurt & Graz",
+        "city": "Klagenfurt am Wörthersee"
+      },
+      "arrive": {
+        "location": "CITY",
+        "city": "Zürich"
+      },
+      "meetup_at": "2025-12-19 17:00:00",
+      "start_at": "2025-12-19 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/29344.1750371896.png",
+      "map": "https://static.truckersmp.com/images/event/map/29344.1750764662.png",
+      "description": "[![](https://i.imgur.com/rleWqlg.png)](https://www.eternaltransport.com/events/december)\r\n\r\n[![T7S3q-UX.jpg](https://i.postimg.cc/g2p5CNHt/Event-Supervised-By.png)](https://discord.gg/BzyFpaEghj)\r\n\r\n[![](https://ik.imagekit.io/RealOpsMedia1/TMP%20banners/TMP%20banners/repls.png?updatedAt=1759407884999)](https://discord.gg/realops)\r\n\r\n-----",
+      "rule": "Event Rules for Participants:\r\n* The Event Staff are recognized as; “Elite | Staff\" or similar.\r\n* Impersonating Event Staff using the aforementioned tags is forbidden.\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars and Buses are prohibited except for event staff showing a clear tag.\r\n* Participants must haul a trailer. (Except Event Staff)\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Overtaking is prohibited.\r\n* Participants must follow Event Staff instructions.\r\n* Participants should park at their designated slots. If you do not have a designated slot you are required to park in the 'Public Parking' area.\r\n* Participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n* All other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff\r\n* All other TruckersMP rules apply.\r\n\r\n### Real Operations:\r\n> Five (5) \"Real Operations\" scenarios have been approved by TruckersMP Event Management. This includes three (3) on a highway and two (2) on country roads. All operations have been reviewed and approved in line with our official rules. Any concerns regarding the actions or operations carried out by the Event Staff using the aforementioned tags should be directed to TruckersMP Event Management.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 4681383,
+        "username": "Macik Mucuk"
+      },
+      "attendances": {
+        "confirmed": 324,
+        "unsure": 12,
+        "vtcs": 54
+      },
+      "dlcs": [],
+      "url": "/events/29344-eternal|-winter-convoy2025",
+      "created_at": "2025-06-19 22:24:56",
+      "updated_at": "2025-12-05 23:22:57"
+    },
+    {
+      "id": 29773,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | January Convoy 2026",
+      "slug": "29773-eternal-transport|-january-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 18,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Travemünde",
+        "city": "Kiel"
+      },
+      "arrive": {
+        "location": "Quarry",
+        "city": "Hanover"
+      },
+      "meetup_at": "2026-01-23 17:00:00",
+      "start_at": "2026-01-23 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/29773.1763215697.png",
+      "map": "https://static.truckersmp.com/images/event/map/29773.1753872364.png",
+      "description": "[![](https://i.imgur.com/yaDDyXe.jpeg)](https://discord.gg/eternaltransport)\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord) \r\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ",
+      "rule": "Event Rules for Participants:\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply..\r\n\r\nEvent Rules for Event Staff:\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 242,
+        "unsure": 4,
+        "vtcs": 32
+      },
+      "dlcs": [],
+      "url": "/events/29773-eternal-transport|-january-convoy2026",
+      "created_at": "2025-07-17 20:24:15",
+      "updated_at": "2026-01-03 23:24:15"
+    },
+    {
+      "id": 30495,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | February 2026",
+      "slug": "30495-eternal-transport|-february2026",
+      "game": "ETS2",
+      "server": {
+        "id": 18,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Stockholm"
+      },
+      "arrive": {
+        "location": "Port",
+        "city": "Kristiansand"
+      },
+      "meetup_at": "2026-02-20 17:00:00",
+      "start_at": "2026-02-20 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/30495.1763222556.png",
+      "map": "https://static.truckersmp.com/images/event/map/30495.1756124527.png",
+      "description": "[![](https://i.vgy.me/70hPp1.png)](https://discord.gg/eternaltransport)\r\n\r\n\r\n-----\r\n\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)",
+      "rule": "Event Rules for Participants:\r\n\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | ROS, UC | RO,  UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 4681383,
+        "username": "Macik Mucuk"
+      },
+      "attendances": {
+        "confirmed": 288,
+        "unsure": 7,
+        "vtcs": 43
+      },
+      "dlcs": {
+        "304212": "Scandinavia"
+      },
+      "url": "/events/30495-eternal-transport|-february2026",
+      "created_at": "2025-08-21 15:26:50",
+      "updated_at": "2026-02-05 01:00:31"
+    },
+    {
+      "id": 31308,
+      "event_type": {
+        "key": "truck_show_and_convoy",
+        "name": "Truckfest And Convoy"
+      },
+      "name": "Eternal | 2nd Anniversary Convoy",
+      "slug": "31308-eternal|2nd-anniversary-convoy",
+      "game": "ETS2",
+      "server": {
+        "id": 18,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "& Leipzing & TBD",
+        "city": "Dresden"
+      },
+      "arrive": {
+        "location": "ITS",
+        "city": "Hanover"
+      },
+      "meetup_at": "2026-04-25 17:00:00",
+      "start_at": "2026-04-25 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/31308.1759615932.png",
+      "map": "https://static.truckersmp.com/images/event/map/31308.1775491032.png",
+      "description": "[![](https://i.vgy.me/gF9P5d.png)](https://discord.gg/eternaltransport)\r\n\r\n\r\n-----\r\n\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)\r\n\r\n\r\n\r\n### Real Ops Created and implemented by: TCCR Events  [![](https://zupimages.net/up/25/42/hjjo.png)](https://discord.gg/Vp3YcdRhUz)",
+      "rule": "Event Rules for Participants:\r\n- The Event Staff are recognized as \"ET2YR | EM, ET2YR | CC, ET2YR | CCS, ET2YR | ST, ET2YR | Lead, ET2YR | Tail, ET2YR | MT, ET2YR | ROM, ET2YR | RO, ET2YR | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply.\r\n\r\n\r\nEvent Rules for Event Staff:\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.\r\n\r\n### Real Operations:\r\n> Six (6) \"Real Operations\" scenarios have been approved by TruckersMP Event Management. This includes four (4) on a highway and two (2) on country roads. All operations have been reviewed and approved in line with our official rules. Any concerns regarding the actions or operations carried out by the Event Staff using the aforementioned tags should be directed to TruckersMP Event Management.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 525,
+        "unsure": 14,
+        "vtcs": 85
+      },
+      "dlcs": [],
+      "url": "/events/31308-eternal|2nd-anniversary-convoy",
+      "created_at": "2025-10-03 21:20:14",
+      "updated_at": "2026-04-06 15:57:12"
+    },
+    {
+      "id": 31954,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | Spring Convoy 2026",
+      "slug": "31954-eternal-transport|-spring-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 25,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Tirana"
+      },
+      "arrive": {
+        "location": "SYS Chema & Eumefa",
+        "city": "Belgrade"
+      },
+      "meetup_at": "2026-05-10 17:00:00",
+      "start_at": "2026-05-10 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/31954.1771071115.png",
+      "map": "https://static.truckersmp.com/images/event/map/31954.1762637109.png",
+      "description": "[![](https://i.vgy.me/JBXYkw.png )](https://discord.gg/eternaltransport)\r\n\r\n\r\n\r\n-----\r\n\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)",
+      "rule": "Event Rules for Participants:\r\n\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | ROS, UC | RO,  UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 234,
+        "unsure": 9,
+        "vtcs": 50
+      },
+      "dlcs": {
+        "2004210": "West Balkans"
+      },
+      "url": "/events/31954-eternal-transport|-spring-convoy2026",
+      "created_at": "2025-11-07 17:44:17",
+      "updated_at": "2026-05-03 15:52:15"
+    },
+    {
+      "id": 32551,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | June Convoy 2026",
+      "slug": "32551-eternal-transport|-june-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Kavala"
+      },
+      "arrive": {
+        "location": "Port",
+        "city": "Patras"
+      },
+      "meetup_at": "2026-06-26 17:00:00",
+      "start_at": "2026-06-26 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/32551.1768778757.png",
+      "map": "https://static.truckersmp.com/images/event/map/32551.1766789127.png",
+      "description": "[![](https://i.vgy.me/C2Lvaf.png)](https://discord.gg/eternaltransport)\r\n\r\n\r\n\r\n-----\r\n\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)\r\n\r\n\r\n-----",
+      "rule": "Event Rules for Participants:\r\n\r\n\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | ROS, UC | RO,  UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply.\r\n\r\n\r\nEvent Rules for Event Staff:\r\n\r\n\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 240,
+        "unsure": 5,
+        "vtcs": 31
+      },
+      "dlcs": {
+        "2604420": "Greece"
+      },
+      "url": "/events/32551-eternal-transport|-june-convoy2026",
+      "created_at": "2025-12-13 18:57:14",
+      "updated_at": "2026-06-06 18:26:31"
+    },
+    {
+      "id": 32921,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | Summer Convoy 2026",
+      "slug": "32921-eternal-transport|-summer-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Florence"
+      },
+      "arrive": {
+        "location": "Port",
+        "city": "Naples"
+      },
+      "meetup_at": "2026-07-16 17:00:00",
+      "start_at": "2026-07-16 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/32921.1771071147.png",
+      "map": "https://static.truckersmp.com/images/event/map/32921.1783005996.png",
+      "description": "[![](https://i.vgy.me/r4kQxS.png)](https://discord.gg/eternaltransport)\r\n\r\n\r\n-----\r\n\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)\r\n\r\n\r\n-----",
+      "rule": "Event Rules for Participants:\r\n\r\n* The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | ROS, UC | RO, UC | GM\" or similar.\r\n* Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Overtaking is prohibited.\r\n* Participants must haul a trailer.\r\n* Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Free roaming on the server is prohibited.\r\n* Participants with consistent lag must remain at the back of the convoy.\r\n* Participants must follow Event Staff instructions.\r\n* Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n* Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n* Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n* All other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n* Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 291,
+        "unsure": 6,
+        "vtcs": 50
+      },
+      "dlcs": {
+        "558244": "Italia"
+      },
+      "url": "/events/32921-eternal-transport|-summer-convoy2026",
+      "created_at": "2026-01-02 20:09:27",
+      "updated_at": "2026-07-02 15:26:37"
+    },
+    {
+      "id": 33760,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | August Convoy 2026",
+      "slug": "33760-eternal-transport|-august-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 41,
+        "name": "Simulation 2"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slot",
+        "city": "Salzburg"
+      },
+      "arrive": {
+        "location": "TREE-ET",
+        "city": "Leipzig"
+      },
+      "meetup_at": "2026-08-14 17:00:00",
+      "start_at": "2026-08-14 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/33760.1771019753.png",
+      "map": "https://static.truckersmp.com/images/event/map/33760.1771109951.png",
+      "description": "[![](https://i.vgy.me/6cRD5y.png)](https://discord.gg/eternaltransport)\r\n\r\n\r\n\r\n\r\n-----\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)",
+      "rule": "Event Rules for Participants:\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | ROS, UC | RO,  UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 206,
+        "unsure": 3,
+        "vtcs": 32
+      },
+      "dlcs": [],
+      "url": "/events/33760-eternal-transport|-august-convoy2026",
+      "created_at": "2026-02-08 18:41:40",
+      "updated_at": "2026-08-13 08:59:05"
+    },
+    {
+      "id": 34267,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | September Convoy 2026",
+      "slug": "34267-eternal-transport|-september-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 14,
+        "name": "Event Server"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Rēzekne"
+      },
+      "arrive": {
+        "location": "Ladoga",
+        "city": "Kaliningrad"
+      },
+      "meetup_at": "2026-09-18 17:00:00",
+      "start_at": "2026-09-18 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/34267.1778886977.png",
+      "map": "https://static.truckersmp.com/images/event/map/34267.1773874654.png",
+      "description": "[![](https://i.vgy.me/pz3xvO.png)](https://discord.gg/eternaltransport)\r\n\r\n\r\n-----\r\n\r\n\r\n︎︎[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)",
+      "rule": "Event Rules for Participants:\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | ROS, UC | RO,  UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "Featured",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 232,
+        "unsure": 2,
+        "vtcs": 35
+      },
+      "dlcs": {
+        "925580": "Beyond the Baltic Sea"
+      },
+      "url": "/events/34267-eternal-transport|-september-convoy2026",
+      "created_at": "2026-03-03 13:18:19",
+      "updated_at": "2026-09-03 09:17:42"
+    },
+    {
+      "id": 35049,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | October Convoy 2026",
+      "slug": "35049-eternal-transport|-october-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 41,
+        "name": "Simulation 2"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slot",
+        "city": "Brussels"
+      },
+      "arrive": {
+        "location": "Dom Depo",
+        "city": "Frankfurt am Main"
+      },
+      "meetup_at": "2026-10-24 17:00:00",
+      "start_at": "2026-10-24 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/35049.1779058116.png",
+      "map": "https://static.truckersmp.com/images/event/map/35049.1779126586.png",
+      "description": "[![](https://i.vgy.me/SA3L7n.png)](https://discord.gg/eternaltransport)\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)\r\n︎︎⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀︎︎⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀︎︎⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀︎︎⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀⠀ ⠀ ⠀︎ ︎⠀ ⠀",
+      "rule": "Event Rules for Participants:\r\n- The Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | ROS, UC | RO,  UC | GM\" or similar.\r\n- Impersonating Event Staff using the above-mentioned tags is forbidden.\r\n- Advertising is prohibited. (Except Event Staff)\r\n- Overtaking is prohibited.\r\n- Participants must haul a trailer.\r\n- Double trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n- Free roaming on the server is prohibited.\r\n- Participants with consistent lag must remain at the back of the convoy.\r\n- Participants must follow Event Staff instructions.\r\n- Participants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\n- Convoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\n- Cars and Buses are prohibited except for Event Staff showing a clear tag.\r\n- All other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n- Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n- Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\n- Event Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n- Event Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\n- All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 174,
+        "unsure": 3,
+        "vtcs": 44
+      },
+      "dlcs": [],
+      "url": "/events/35049-eternal-transport|-october-convoy2026",
+      "created_at": "2026-04-12 18:03:37",
+      "updated_at": "2026-09-04 17:48:49"
+    },
+    {
+      "id": 35882,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | November Convoy 2026",
+      "slug": "35882-eternal-transport|-november-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 0,
+        "name": "To be determined"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Montpellier"
+      },
+      "arrive": {
+        "location": "Globeur",
+        "city": "Bayonne"
+      },
+      "meetup_at": "2026-11-22 17:00:00",
+      "start_at": "2026-11-22 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/35882.1779573568.png",
+      "map": "https://static.truckersmp.com/images/event/map/35882.1779573594.png",
+      "description": "[![](https://i.vgy.me/aGY2yZ.png)](https://discord.gg/eternaltransport)\r\n\r\n[![](https://cdn.plvtc.com/cdn/NeedCC/needccBanner.png)](https://discord.gg/557ZjB7YgS)",
+      "rule": "## Rules for Participants\r\n* The Event Staff are recognized as; “Need | CC, GM, Staff or Similar.\"\r\n* Impersonating Event Staff using the tags mentioned above is forbidden.\r\n* Double trailers, Triple trailers, HCT trailers, and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars and Bus are prohibited except for event staff showing a clear tag\r\n* Participants must haul a trailer. (Except Event Staff)\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Overtaking is prohibited. (Except Event Staff)\r\n* Free roaming on the server is prohibited.\r\n* Participants must follow Event Staff instructions.\r\n* Participants should park at their designated slots. You must park in the 'Public Parking' area if you don't have a designated slot.\r\n* Convoy participants must only leave the starting location when instructed to do so in an orderly (one-by-one) manner.\r\n* All other TruckersMP rules apply.\r\n\r\n## Event Rules for Event Staff\r\n* Event Staff can block junctions and roads approaching junctions to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. Following the rule above.\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 5088646,
+        "username": "Assettodobo"
+      },
+      "attendances": {
+        "confirmed": 145,
+        "unsure": 1,
+        "vtcs": 37
+      },
+      "dlcs": {
+        "531130": "Vive la France !"
+      },
+      "url": "/events/35882-eternal-transport|-november-convoy2026",
+      "created_at": "2026-05-23 18:32:27",
+      "updated_at": "2026-08-11 12:34:55"
+    },
+    {
+      "id": 36123,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | Winter Convoy 2026",
+      "slug": "36123-eternal-transport|-winter-convoy2026",
+      "game": "ETS2",
+      "server": {
+        "id": 0,
+        "name": "To be determined"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Aarhus"
+      },
+      "arrive": {
+        "location": "City",
+        "city": "Jönköping"
+      },
+      "meetup_at": "2026-12-05 17:00:00",
+      "start_at": "2026-12-05 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/36123.1781225314.png",
+      "map": "https://static.truckersmp.com/images/event/map/36123.1781226546.png",
+      "description": "[![](https://i.vgy.me/uGnuu2.png)](https://discord.gg/eternaltransport)\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)",
+      "rule": null,
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 5088646,
+        "username": "Assettodobo"
+      },
+      "attendances": {
+        "confirmed": 129,
+        "unsure": 1,
+        "vtcs": 36
+      },
+      "dlcs": {
+        "304212": "Scandinavia"
+      },
+      "url": "/events/36123-eternal-transport|-winter-convoy2026",
+      "created_at": "2026-06-05 21:13:14",
+      "updated_at": "2026-08-11 12:52:00"
+    },
+    {
+      "id": 37044,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | January Convoy",
+      "slug": "37044-eternal-transport|-january-convoy",
+      "game": "ETS2",
+      "server": {
+        "id": 0,
+        "name": "To be determined"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Munich"
+      },
+      "arrive": {
+        "location": "N/A",
+        "city": "Erfurt"
+      },
+      "meetup_at": "2027-01-13 17:00:00",
+      "start_at": "2027-01-13 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/37044.1785366067.png",
+      "map": "https://static.truckersmp.com/images/event/map/37044.1785366067.png",
+      "description": "[![](https://i.vgy.me/wH6Fq9.png)](https://discord.gg/eternaltransport)\r\n\r\n[![](https://cdn.plvtc.com/cdn/NeedCC/needccBanner.png)](https://discord.gg/557ZjB7YgS)",
+      "rule": "## Rules for Participants\r\n* The Event Staff are recognized as; “Need | CC, GM, Staff or Similar.\"\r\n* Impersonating Event Staff using the tags mentioned above is forbidden.\r\n* Double trailers, Triple trailers, HCT trailers, and Heavy Haul configurations are prohibited. (Except Event Staff)\r\n* Cars and Bus are prohibited except for event staff showing a clear tag\r\n* Participants must haul a trailer. (Except Event Staff)\r\n* Advertising is prohibited. (Except Event Staff)\r\n* Overtaking is prohibited. (Except Event Staff)\r\n* Free roaming on the server is prohibited.\r\n* Participants must follow Event Staff instructions.\r\n* Participants should park at their designated slots. You must park in the 'Public Parking' area if you don't have a designated slot.\r\n* Convoy participants must only leave the starting location when instructed to do so in an orderly (one-by-one) manner.\r\n* All other TruckersMP rules apply.\r\n\r\n## Event Rules for Event Staff\r\n* Event Staff can block junctions and roads approaching junctions to direct the convoy.\r\n* Event Staff can park out of bounds. Providing this is on the ground and not on top of buildings or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\n* Event Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\n* Event Staff can drive the incorrect way where roads have a central reservation barrier ONLY. Following the rule above.\r\n* All other TruckersMP rules apply.",
+      "voice_link": "https://discord.com/invite/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 4681383,
+        "username": "Macik Mucuk"
+      },
+      "attendances": {
+        "confirmed": 98,
+        "unsure": 2,
+        "vtcs": 44
+      },
+      "dlcs": [],
+      "url": "/events/37044-eternal-transport|-january-convoy",
+      "created_at": "2026-07-29 23:01:07",
+      "updated_at": "2026-07-31 11:06:20"
+    },
+    {
+      "id": 37505,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | February Convoy",
+      "slug": "37505-eternal-transport|-february-convoy",
+      "game": "ETS2",
+      "server": {
+        "id": 0,
+        "name": "To be determined"
+      },
+      "language": "English",
+      "departure": {
+        "location": "Slots",
+        "city": "Trondheim"
+      },
+      "arrive": {
+        "location": "WGCC",
+        "city": "Lulea"
+      },
+      "meetup_at": "2027-02-17 17:00:00",
+      "start_at": "2027-02-17 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/37505.1787841866.png",
+      "map": "https://static.truckersmp.com/images/event/map/37505.1787774038.png",
+      "description": "[![View on vgy.me](https://i.vgy.me/272czV.png \"View 272czV.png on vgy.me\")](https://vgy.me/u/272czV)\r\n\r\n[![](https://united-convoys.com/static/UC_banner_CC.png)](https://www.united-convoys.com/discord)",
+      "rule": "Event Rules for Participants:\r\n\r\nThe Event Staff are recognized as \"UC | CC, UC | CCS, UC | ST, UC | Lead, UC | Tail, UC | MT, UC | ROS, UC | RO, UC | GM\" or similar.\r\nImpersonating Event Staff using the above-mentioned tags is forbidden.\r\nAdvertising is prohibited. (Except Event Staff)\r\nOvertaking is prohibited.\r\nParticipants must haul a trailer.\r\nDouble trailers, Triple trailers, HCT trailers and Heavy Haul configurations are prohibited. (Except Event Staff)\r\nFree roaming on the server is prohibited.\r\nParticipants with consistent lag must remain at the back of the convoy.\r\nParticipants must follow Event Staff instructions.\r\nParticipants should park at their designated slots. If you do not have a designated slot you are required to park at the 'Public Parking' slot\r\nConvoy participants must only leave the starting location when instructed to do so in an orderly (one by one) manner.\r\nCars and Buses are prohibited except for Event Staff showing a clear tag.\r\nAll other TruckersMP rules apply.\r\n\r\nEvent Rules for Event Staff:\r\n\r\nEvent Staff overtaking the convoy cannot be performed by more than 2 members at a time.\r\nEvent Staff can drive the incorrect way where roads have a central reservation barrier ONLY. In accordance with the rule above.\r\nEvent Staff are permitted to park out of bounds as long as it is on the ground and not on top of a building or other inappropriate places deemed unsuitable by TruckersMP Staff.\r\nEvent Staff can block junctions and roads approaching junctions in order to direct the convoy.\r\nAll other TruckersMP rules apply.",
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 91,
+        "unsure": 0,
+        "vtcs": 31
+      },
+      "dlcs": {
+        "2780810": "Nordic Horizons"
+      },
+      "url": "/events/37505-eternal-transport|-february-convoy",
+      "created_at": "2026-08-26 19:53:58",
+      "updated_at": "2026-08-28 20:15:52"
+    },
+    {
+      "id": 37942,
+      "event_type": {
+        "key": "convoy",
+        "name": "Convoy"
+      },
+      "name": "Eternal Transport | March Convoy",
+      "slug": "37942-eternal-transport|-march-convoy",
+      "game": "ETS2",
+      "server": {
+        "id": 0,
+        "name": "To be determined"
+      },
+      "language": "English",
+      "departure": {
+        "location": "& Port de Sagunt",
+        "city": "Valencia"
+      },
+      "arrive": {
+        "location": "CDS",
+        "city": "Murcia"
+      },
+      "meetup_at": "2027-03-16 17:00:00",
+      "start_at": "2027-03-16 18:00:00",
+      "banner": "https://static.truckersmp.com/images/event/cover/37942.1789740949.png",
+      "map": "https://static.truckersmp.com/images/event/map/37942.1789646094.png",
+      "description": "[![](https://i.vgy.me/BKVAvK.png)](https://discord.gg/eternaltransport)\r\n\r\n[![](https://cdn.plvtc.com/cdn/NeedCC/needccBanner.png)](https://discord.gg/557ZjB7YgS)",
+      "rule": null,
+      "voice_link": "https://discord.gg/eternaltransport",
+      "external_link": "https://www.eternaltransport.com/",
+      "featured": "",
+      "vtc": {
+        "id": 74784,
+        "name": "ETERNAL TRANSPORT™"
+      },
+      "user": {
+        "id": 3489028,
+        "username": "Eternal l Fr!qheR^!"
+      },
+      "attendances": {
+        "confirmed": 54,
+        "unsure": 1,
+        "vtcs": 23
+      },
+      "dlcs": {
+        "1209460": "Iberia"
+      },
+      "url": "/events/37942-eternal-transport|-march-convoy",
+      "created_at": "2026-09-17 11:54:54",
+      "updated_at": "2026-09-19 12:45:38"
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "updatedAt": "2026-09-20T22:30:05.830Z",
+  "guildId": "932199620224901170",
+  "count": 25,
+  "rolesMeta": {
+    "HR Team": {
+      "name": "HR Team",
+      "color": "#20373b",
+      "icon": "https://cdn.discordapp.com/role-icons/1234165328469299304/fd922fb14e92f744230b23fd4b0594c3.png?size=48"
+    },
+    "Founder": {
+      "name": "Founder",
+      "color": "#064a55",
+      "icon": "https://cdn.discordapp.com/role-icons/1234166053270065163/b8087e06cee8fe5ff5bfeb70afe4cdc9.png?size=48"
+    },
+    "Event Manager": {
+      "name": "Event Manager",
+      "color": "#b58958",
+      "icon": "https://cdn.discordapp.com/role-icons/1234166122073292923/82705aa02b21d757eb53fc9e4be3c101.png?size=48"
+    },
+    "Owner": {
+      "name": "Owner",
+      "color": "#4f9e83",
+      "icon": "https://cdn.discordapp.com/role-icons/1234200660019253399/b8087e06cee8fe5ff5bfeb70afe4cdc9.png?size=48"
+    },
+    "Media Manager": {
+      "name": "Media Manager",
+      "color": "#cb8358",
+      "icon": "https://cdn.discordapp.com/role-icons/1234873625451040781/4a3052f7ebb779f2fe285df507887b43.png?size=48"
+    },
+    "HR Manager": {
+      "name": "HR Manager",
+      "color": "#a69167",
+      "icon": "https://cdn.discordapp.com/role-icons/1238936158184935465/fd922fb14e92f744230b23fd4b0594c3.png?size=48"
+    },
+    "General Manager": {
+      "name": "General Manager",
+      "color": "#c26c6c",
+      "icon": "https://cdn.discordapp.com/role-icons/1244592780185964545/c342212f80ccd30fc4a2ddabfee2df35.png?size=48"
+    },
+    "Save Manager": {
+      "name": "Save Manager",
+      "color": "#f834ff",
+      "icon": "https://cdn.discordapp.com/role-icons/1324421150322856018/ba8e5445189b0bb1952b13a174b568f9.png?size=48"
+    },
+    "Chief Executive Officer": {
+      "name": "Chief Executive Officer",
+      "color": "#656d3f",
+      "icon": "https://cdn.discordapp.com/role-icons/1347211242154102880/d681ef60b66b7405afe4f26016696e9e.png?size=48"
+    },
+    "Chief Operating Officer": {
+      "name": "Chief Operating Officer",
+      "color": "#9a4d7b",
+      "icon": "https://cdn.discordapp.com/role-icons/1347211242737111145/df793bc72442c98f4303b7c5aa3ba272.png?size=48"
+    },
+    "Event Assistant": {
+      "name": "Event Assistant",
+      "color": "#ce7a5a",
+      "icon": "https://cdn.discordapp.com/role-icons/1354548188694184129/cc271868fe7ae107bf9b278019e8737c.png?size=48"
+    },
+    "Media Team": {
+      "name": "Media Team",
+      "color": "#ace7ad",
+      "icon": "https://cdn.discordapp.com/role-icons/1356639200929382571/4a3052f7ebb779f2fe285df507887b43.png?size=48"
+    },
+    "Developer Team": {
+      "name": "Developer Team",
+      "color": "#4c7584",
+      "icon": "https://cdn.discordapp.com/role-icons/1373616298101309551/8756691ae0c4244b12b7686dc8860345.png?size=48"
+    },
+    "Media Assistant": {
+      "name": "Media Assistant",
+      "color": "#acad79",
+      "icon": null
+    },
+    "HR Trainee": {
+      "name": "HR Trainee",
+      "color": "#ddbea9",
+      "icon": null
+    },
+    "Chief Administrative Officer": {
+      "name": "Chief Administrative Officer",
+      "color": "#f39f9f",
+      "icon": "https://cdn.discordapp.com/role-icons/1413652756581056573/d79d660b5b9d9486f4c08c1f0358f7ec.png?size=48"
+    },
+    "Brand Manager": {
+      "name": "Brand Manager",
+      "color": "#cfc3c3",
+      "icon": "https://cdn.discordapp.com/role-icons/1418731312428355644/6e0dd02c9a0856ae6b2c783260e7980b.png?size=48"
+    },
+    "HR Assistant": {
+      "name": "HR Assistant",
+      "color": "#cbe196",
+      "icon": null
+    },
+    "Development Manager": {
+      "name": "Development Manager",
+      "color": "#976ca4",
+      "icon": null
+    },
+    "Leadership Intern": {
+      "name": "Leadership Intern",
+      "color": "#936186",
+      "icon": null
+    }
+  },
+  "members": [
+    {
+      "id": "401425845933178882",
+      "username": "fr1qher",
+      "name": "| ET |  Yiğit・21",
+      "avatar": "https://cdn.discordapp.com/guilds/932199620224901170/users/401425845933178882/avatars/a_7fb4fa1e1b53b7ab540f762c762957ed.gif?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_7e68c00aa5c50a066b4eb66209204315.png?size=240&passthrough=true",
+      "banner": "https://cdn.discordapp.com/banners/401425845933178882/a_707e05d49bcb63aa7d6c75345ef4fca8.gif?size=600",
+      "bannerColor": "#36393f",
+      "clanTag": "ETNL",
+      "primaryRole": "Owner",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1234200660019253399/b8087e06cee8fe5ff5bfeb70afe4cdc9.png?size=48",
+      "priority": 0,
+      "color": "#4f9e83",
+      "roles": [
+        "Owner",
+        "Founder",
+        "Event Manager"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "412280237884309504",
+      "username": "athenabey",
+      "name": "| ET | Eren・23",
+      "avatar": "https://cdn.discordapp.com/avatars/412280237884309504/a_973bbdf6ae5b0673afbcf6b93bdba8b8.gif?size=256",
+      "decoration": null,
+      "banner": "https://cdn.discordapp.com/banners/412280237884309504/a_6b68fa66f4c619ef96533085d628ddc2.gif?size=600",
+      "bannerColor": "#035e4c",
+      "clanTag": null,
+      "primaryRole": "Founder",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1234166053270065163/b8087e06cee8fe5ff5bfeb70afe4cdc9.png?size=48",
+      "priority": 1,
+      "color": "#064a55",
+      "roles": [
+        "Founder"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1076084125347348581",
+      "username": "neverrlosee",
+      "name": "| ET | Alperen・17",
+      "avatar": "https://cdn.discordapp.com/avatars/1076084125347348581/a_220aac312cf8477fce1921f06306ad0a.gif?size=256",
+      "decoration": null,
+      "banner": "https://cdn.discordapp.com/banners/1076084125347348581/a_a387dc986aa325234a6c65cc997f82e0.gif?size=600",
+      "bannerColor": null,
+      "clanTag": "ETNL",
+      "primaryRole": "Chief Operating Officer",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1347211242737111145/df793bc72442c98f4303b7c5aa3ba272.png?size=48",
+      "priority": 3,
+      "color": "#9a4d7b",
+      "roles": [
+        "Chief Operating Officer",
+        "HR Manager",
+        "Event Manager"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "804002125474562058",
+      "username": "melsa_13",
+      "name": "| ET | Bekir・17",
+      "avatar": "https://cdn.discordapp.com/avatars/804002125474562058/f8ac687adc75e59adf1a5b89a7189951.png?size=256",
+      "decoration": null,
+      "banner": "https://cdn.discordapp.com/banners/804002125474562058/a_c220db58a7fd1c5b7205224a2ec675f4.gif?size=600",
+      "bannerColor": null,
+      "clanTag": null,
+      "primaryRole": "Chief Administrative Officer",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1413652756581056573/d79d660b5b9d9486f4c08c1f0358f7ec.png?size=48",
+      "priority": 4,
+      "color": "#f39f9f",
+      "roles": [
+        "Chief Administrative Officer",
+        "HR Manager",
+        "Event Manager",
+        "Developer Team",
+        "HR Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "985589677094494358",
+      "username": "itsberkechan",
+      "name": "| ET | BerkeChan・16",
+      "avatar": "https://cdn.discordapp.com/avatars/985589677094494358/ac8912190f30250ec159b1cd50b4be45.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c86b11a49bb8057ce9c974a6f7ad658a.png?size=240&passthrough=true",
+      "banner": "https://cdn.discordapp.com/banners/985589677094494358/a_63cc531975c3e92f6cee5fe02f2f0348.gif?size=600",
+      "bannerColor": "#8a8275",
+      "clanTag": "ETNL",
+      "primaryRole": "General Manager",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1244592780185964545/c342212f80ccd30fc4a2ddabfee2df35.png?size=48",
+      "priority": 6,
+      "color": "#c26c6c",
+      "roles": [
+        "General Manager",
+        "HR Manager",
+        "Event Manager",
+        "Media Assistant",
+        "Media Team",
+        "HR Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1017536641608470591",
+      "username": "mrfast_tmp",
+      "name": "| ET | Mr.Fast ・21",
+      "avatar": "https://cdn.discordapp.com/guilds/932199620224901170/users/1017536641608470591/avatars/ec7afdba128d965c16e02200edb3edda.png?size=256",
+      "decoration": null,
+      "banner": null,
+      "bannerColor": "#570002",
+      "clanTag": "ETNL",
+      "primaryRole": "General Manager",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1244592780185964545/c342212f80ccd30fc4a2ddabfee2df35.png?size=48",
+      "priority": 6,
+      "color": "#c26c6c",
+      "roles": [
+        "General Manager",
+        "Event Manager",
+        "Development Manager",
+        "Event Assistant",
+        "Developer Team",
+        "HR Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "783725489142497320",
+      "username": "montra_06",
+      "name": "| ET | montrα・20",
+      "avatar": "https://cdn.discordapp.com/avatars/783725489142497320/ac5d8253003fcb12d569f3062180c916.png?size=256",
+      "decoration": null,
+      "banner": "https://cdn.discordapp.com/banners/783725489142497320/a_2431fc59b8bf1b503dca78d5f4ea1cff.gif?size=600",
+      "bannerColor": "#000000",
+      "clanTag": "BYGR",
+      "primaryRole": "Event Manager",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1234166122073292923/82705aa02b21d757eb53fc9e4be3c101.png?size=48",
+      "priority": 8,
+      "color": "#b58958",
+      "roles": [
+        "Event Manager",
+        "HR Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1069161881866088469",
+      "username": "t0m1k4_t0m0215",
+      "name": "| ET | TOMAS_RAIDER・22",
+      "avatar": "https://cdn.discordapp.com/avatars/1069161881866088469/5690a03d8a5f442fe313406a85e0247b.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_b0b3d7cf77fd2d73145e07436acb6a40.png?size=240&passthrough=true",
+      "banner": "https://cdn.discordapp.com/guilds/932199620224901170/users/1069161881866088469/banners/3dcdefa4ea2c5525c108fdc15fff8662.png?size=600",
+      "bannerColor": "#00d4ff",
+      "clanTag": "PRE",
+      "primaryRole": "Event Manager",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1234166122073292923/82705aa02b21d757eb53fc9e4be3c101.png?size=48",
+      "priority": 8,
+      "color": "#b58958",
+      "roles": [
+        "Event Manager"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1007367362208608357",
+      "username": "wfjq",
+      "name": "| ET | wfjq・20",
+      "avatar": "https://cdn.discordapp.com/guilds/932199620224901170/users/1007367362208608357/avatars/0800cfae4e2018f35f838f4cff1bf78a.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_92af94f6167b9d12f8f72e6e306a5b80.png?size=240&passthrough=true",
+      "banner": "https://cdn.discordapp.com/guilds/932199620224901170/users/1007367362208608357/banners/a_5bc6053b9f69ebc73894e82f130c8d05.gif?size=600",
+      "bannerColor": "#131416",
+      "clanTag": "C:S",
+      "primaryRole": "Media Manager",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1234873625451040781/4a3052f7ebb779f2fe285df507887b43.png?size=48",
+      "priority": 9,
+      "color": "#cb8358",
+      "roles": [
+        "Media Manager",
+        "Brand Manager",
+        "Media Assistant"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1273292250918686857",
+      "username": "ishak_42486",
+      "name": "LOA + ET | İshak・19",
+      "avatar": "https://cdn.discordapp.com/avatars/1273292250918686857/793eb74e3ca381b85472d1fdccf77794.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_d3da36040163ee0f9176dfe7ced45cdc.png?size=240&passthrough=true",
+      "banner": "https://cdn.discordapp.com/banners/1273292250918686857/9cd09b01b745b8fee509f8e0520b61b7.png?size=600",
+      "bannerColor": "#000000",
+      "clanTag": null,
+      "primaryRole": "Media Manager",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1234873625451040781/4a3052f7ebb779f2fe285df507887b43.png?size=48",
+      "priority": 9,
+      "color": "#cb8358",
+      "roles": [
+        "Media Manager",
+        "Media Team",
+        "HR Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "655719317748580382",
+      "username": "60_erbaali_umut",
+      "name": "| ET |  Umut・22",
+      "avatar": "https://cdn.discordapp.com/guilds/932199620224901170/users/655719317748580382/avatars/a_64a04f4b3d68ee38e56ce0b1cd15201e.gif?size=256",
+      "decoration": null,
+      "banner": "https://cdn.discordapp.com/guilds/932199620224901170/users/655719317748580382/banners/a_e46771c6f2b58e4cf3adc1a4db8f83d0.gif?size=600",
+      "bannerColor": "#000cff",
+      "clanTag": "ETNL",
+      "primaryRole": "Save Manager",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1324421150322856018/ba8e5445189b0bb1952b13a174b568f9.png?size=48",
+      "priority": 12,
+      "color": "#f834ff",
+      "roles": [
+        "Save Manager",
+        "Event Assistant"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1343319715006644286",
+      "username": "yetimhanekundakcisi3460",
+      "name": "| ET | Çoban ・ 21",
+      "avatar": "https://cdn.discordapp.com/avatars/1343319715006644286/d211b3ce3836042adfc9eb6743636bc3.png?size=256",
+      "decoration": null,
+      "banner": null,
+      "bannerColor": null,
+      "clanTag": null,
+      "primaryRole": "Save Manager",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1324421150322856018/ba8e5445189b0bb1952b13a174b568f9.png?size=48",
+      "priority": 12,
+      "color": "#f834ff",
+      "roles": [
+        "Save Manager"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "722731159041343499",
+      "username": "pivo7734",
+      "name": "Архангел",
+      "avatar": "https://cdn.discordapp.com/avatars/722731159041343499/cfae78d69b5088c973985fc8500f4ad2.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_94febf08c37b21ee5ed92c49ef98bf00.png?size=240&passthrough=true",
+      "banner": null,
+      "bannerColor": "#242227",
+      "clanTag": null,
+      "primaryRole": "Media Assistant",
+      "roleIcon": null,
+      "priority": 15,
+      "color": "#acad79",
+      "roles": [
+        "Media Assistant"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "759721776447750184",
+      "username": "ryota_apz",
+      "name": "Ryota*",
+      "avatar": "https://cdn.discordapp.com/avatars/759721776447750184/e2ed85b082cd7506dfb22395aff992de.png?size=256",
+      "decoration": null,
+      "banner": null,
+      "bannerColor": "#242429",
+      "clanTag": "THRM",
+      "primaryRole": "Media Assistant",
+      "roleIcon": null,
+      "priority": 15,
+      "color": "#acad79",
+      "roles": [
+        "Media Assistant",
+        "Media Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1200209560997208205",
+      "username": ".pitachu._",
+      "name": "| ET | stinky pitachu ew",
+      "avatar": "https://cdn.discordapp.com/embed/avatars/1.png",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_5cbb9718e2dfa11903327526d23eb0fd.png?size=240&passthrough=true",
+      "banner": "https://cdn.discordapp.com/banners/1200209560997208205/c859e72686a0dba139f7c2f3c54ae06a.png?size=600",
+      "bannerColor": null,
+      "clanTag": "|-/",
+      "primaryRole": "Developer Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1373616298101309551/8756691ae0c4244b12b7686dc8860345.png?size=48",
+      "priority": 16,
+      "color": "#4c7584",
+      "roles": [
+        "Developer Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "287239736311939073",
+      "username": "isclouds",
+      "name": "Marcelo",
+      "avatar": "https://cdn.discordapp.com/avatars/287239736311939073/0f7868c9b00ac5ad9b482fec703f5001.png?size=256",
+      "decoration": null,
+      "banner": null,
+      "bannerColor": "#161616",
+      "clanTag": "TMP",
+      "primaryRole": "Media Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1356639200929382571/4a3052f7ebb779f2fe285df507887b43.png?size=48",
+      "priority": 17,
+      "color": "#ace7ad",
+      "roles": [
+        "Media Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "699180102205964349",
+      "username": "dream.212",
+      "name": "| ET | Mustafa・20",
+      "avatar": "https://cdn.discordapp.com/avatars/699180102205964349/76a762f82718d611e451e79875f343c5.png?size=256",
+      "decoration": null,
+      "banner": "https://cdn.discordapp.com/banners/699180102205964349/bdd67305b4104acc3a4572ffb6982aa6.png?size=600",
+      "bannerColor": "#000000",
+      "clanTag": "ETNL",
+      "primaryRole": "Media Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1356639200929382571/4a3052f7ebb779f2fe285df507887b43.png?size=48",
+      "priority": 17,
+      "color": "#ace7ad",
+      "roles": [
+        "Media Team",
+        "HR Team",
+        "HR Trainee"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "804547176260042802",
+      "username": "xingge",
+      "name": "xingge",
+      "avatar": "https://cdn.discordapp.com/avatars/804547176260042802/68a14d137079c92ebc187cb3e6890013.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_a8c5af1848e53cc221d149442c03828f.png?size=240&passthrough=true",
+      "banner": null,
+      "bannerColor": "#031826",
+      "clanTag": "ZZZ",
+      "primaryRole": "Media Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1356639200929382571/4a3052f7ebb779f2fe285df507887b43.png?size=48",
+      "priority": 17,
+      "color": "#ace7ad",
+      "roles": [
+        "Media Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "965543428526071808",
+      "username": "captain1337.0000",
+      "name": "Captain1337.",
+      "avatar": "https://cdn.discordapp.com/avatars/965543428526071808/23aff7602f34aa8e160c518155d2c17d.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_fbbdd5565db1c91d95804f7df0074c5a.png?size=240&passthrough=true",
+      "banner": null,
+      "bannerColor": "#913e7d",
+      "clanTag": "R+",
+      "primaryRole": "Media Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1356639200929382571/4a3052f7ebb779f2fe285df507887b43.png?size=48",
+      "priority": 17,
+      "color": "#ace7ad",
+      "roles": [
+        "Media Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1315917181191589980",
+      "username": "dharmarda",
+      "name": "Dharma RDA",
+      "avatar": "https://cdn.discordapp.com/avatars/1315917181191589980/3af7e0cd15eb2c1222c61aee2796c945.png?size=256",
+      "decoration": null,
+      "banner": null,
+      "bannerColor": "#372928",
+      "clanTag": null,
+      "primaryRole": "Media Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1356639200929382571/4a3052f7ebb779f2fe285df507887b43.png?size=48",
+      "priority": 17,
+      "color": "#ace7ad",
+      "roles": [
+        "Media Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1357637574935449610",
+      "username": "lukcysuper",
+      "name": "Zøe.",
+      "avatar": "https://cdn.discordapp.com/avatars/1357637574935449610/aa256fb6a77cb9fb4ca7f15c47898114.png?size=256",
+      "decoration": null,
+      "banner": null,
+      "bannerColor": "#ff00aa",
+      "clanTag": null,
+      "primaryRole": "Media Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1356639200929382571/4a3052f7ebb779f2fe285df507887b43.png?size=48",
+      "priority": 17,
+      "color": "#ace7ad",
+      "roles": [
+        "Media Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "557919628253331466",
+      "username": "enesozder",
+      "name": "| ET | Enes・23",
+      "avatar": "https://cdn.discordapp.com/avatars/557919628253331466/caa6459d9582a9af3d20514127c7fc87.png?size=256",
+      "decoration": null,
+      "banner": null,
+      "bannerColor": "#232426",
+      "clanTag": "ETNL",
+      "primaryRole": "HR Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1234165328469299304/fd922fb14e92f744230b23fd4b0594c3.png?size=48",
+      "priority": 18,
+      "color": "#20373b",
+      "roles": [
+        "HR Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "958415080595283969",
+      "username": "bk0ng",
+      "name": "| ET | Efe・17",
+      "avatar": "https://cdn.discordapp.com/avatars/958415080595283969/453ec5123e8dc807836ce5799cfd7ac0.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_3c97a2d37f433a7913a1c7b7a735d000.png?size=240&passthrough=true",
+      "banner": null,
+      "bannerColor": "#000000",
+      "clanTag": "ETNL",
+      "primaryRole": "HR Team",
+      "roleIcon": "https://cdn.discordapp.com/role-icons/1234165328469299304/fd922fb14e92f744230b23fd4b0594c3.png?size=48",
+      "priority": 18,
+      "color": "#20373b",
+      "roles": [
+        "HR Team"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1088000496041738260",
+      "username": "karahisarkalesi_03",
+      "name": "| ET | Mehmet・17",
+      "avatar": "https://cdn.discordapp.com/avatars/1088000496041738260/4fca4f8265ebcaff039348f5a946b02a.png?size=256",
+      "decoration": null,
+      "banner": null,
+      "bannerColor": "#150031",
+      "clanTag": "ETNL",
+      "primaryRole": "HR Trainee",
+      "roleIcon": null,
+      "priority": 19,
+      "color": "#ddbea9",
+      "roles": [
+        "HR Trainee"
+      ],
+      "status": "Active Staff"
+    },
+    {
+      "id": "1218241476895445015",
+      "username": "sametmert.18",
+      "name": "| ET |  Samet・19",
+      "avatar": "https://cdn.discordapp.com/avatars/1218241476895445015/a_55740804cda034a975dfbed71b67c853.gif?size=256",
+      "decoration": null,
+      "banner": "https://cdn.discordapp.com/banners/1218241476895445015/a_42bf824fd8ad95b86b902ec79ba8aa86.gif?size=600",
+      "bannerColor": "#cc00ff",
+      "clanTag": "1907",
+      "primaryRole": "HR Trainee",
+      "roleIcon": null,
+      "priority": 19,
+      "color": "#ddbea9",
+      "roles": [
+        "HR Trainee"
+      ],
+      "status": "Active Staff"
+    }
+  ]
+}
