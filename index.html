@@ -10,11 +10,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="blur-animations.css">
+  <script src="blur-animations.js" defer></script>
 
   <style>
-
     :root {
-      /* Theme Tokens */
       --ink: #ffffff;
       --muted: rgba(255, 255, 255, 0.72);
       --card-bg: rgba(20, 20, 24, 0.85);
@@ -26,6 +26,7 @@
       --gutter: clamp(16px, 3.6vw, 48px);
       --accent: #9333ea;
       --accent-glow: rgba(147, 51, 234, 0.35);
+      --u: 1px;
     }
 
     * {
@@ -50,7 +51,6 @@
       overflow: hidden;
     }
 
-    /* Page-load animations */
     @keyframes rise {
       from {
         opacity: 0;
@@ -72,7 +72,6 @@
       animation-delay: calc(0.12s + var(--i, 0) * 0.055s);
     }
 
-    /* Custom Signature Font */
     @font-face {
       font-family: 'Bumgreks Signature';
       src: url('BumgreksSignature-Regular.ttf') format('truetype');
@@ -81,7 +80,6 @@
       font-display: swap;
     }
 
-    /* Common Section Typography & Tags */
     .section-tag {
       display: inline-flex;
       align-items: center;
@@ -113,159 +111,31 @@
       margin: 0;
     }
 
-    .section-subtitle {
-      font-size: clamp(15px, 1.4vw, 18px);
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.72);
-      max-width: 65ch;
-      margin: 12px 0 0;
+    .sig-font {
+      font-family: 'Bumgreks Signature', cursive, sans-serif;
+      font-weight: normal;
+      color: #f43f5e;
+      font-size: 1.18em;
+      letter-spacing: 0;
+      margin-left: 2px;
     }
 
-    /* Button Tokens */
-    .btn-dark {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #ffffff;
-      color: #000000;
-      font-family: inherit;
-      font-size: 14.5px;
-      font-weight: 600;
-      padding: 12px 22px;
-      border: 0;
-      border-radius: 9px;
-      white-space: nowrap;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.18s ease, transform 0.18s ease;
-    }
-
-    .btn-dark:hover {
-      background: #e5e5e5;
-      transform: translateY(-1px);
-    }
-
-    .btn-light {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #ffffff;
-      color: #000000;
-      font-family: inherit;
-      font-size: 14.5px;
-      font-weight: 600;
-      padding: 13px 24px;
-      border-radius: 9px;
-      text-decoration: none;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
-
-    .btn-light:hover {
-      background: #e6e6e6;
-      transform: translateY(-1px);
-    }
-
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255, 255, 255, 0.08);
-      color: #ffffff;
-      font-family: inherit;
-      font-size: 14.5px;
-      font-weight: 500;
-      padding: 13px 24px;
-      border-radius: 9px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      text-decoration: none;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      transition: background 0.2s ease, border-color 0.2s ease;
-    }
-
-    .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.14);
-      border-color: rgba(255, 255, 255, 0.35);
-    }
-
-    /* ==========================================================================
-       SECTION 1: HERO
-       ========================================================================== */
-    .hero {
-      position: relative;
-      height: 100vh;
-      height: 100svh;
-      min-height: 620px;
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .hero__bg {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      background: #000000 url("bg.png") center / cover no-repeat;
-      animation: fade-in 1.15s var(--ease) both;
-    }
-
-    .hero__bg img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .hero__bg::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0.85) 100%);
-      z-index: 1;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      z-index: 1;
-      background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.92) 14%, rgba(0, 0, 0, 0.45) 30%, transparent 58%);
-    }
-
-    .hero__inner {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      flex: 1 1 auto;
-      min-height: 0;
-    }
-
+    /* NAV */
     .nav {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 50;
+      position: relative;
+      z-index: 100;
       width: 100%;
     }
-/* ==========================================================================
-       NAVIGATION (UNIFIED ACROSS ALL PAGES)
-       ========================================================================== */
+
     .nav__container {
       max-width: var(--shell);
       margin: 0 auto;
-      padding: 18px var(--gutter);
+      padding: 0 var(--gutter);
+      height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
-      position: relative;
-      z-index: 50;
-      width: 100%;
     }
 
     .brand {
@@ -279,10 +149,11 @@
       text-decoration: none;
     }
 
-    .brand svg {
-      width: 28px;
-      height: 28px;
+    .brand svg, .brand img {
+      width: 32px;
+      height: 32px;
       flex-shrink: 0;
+      object-fit: contain;
     }
 
     .brand__logo {
@@ -300,868 +171,505 @@
     .nav__links {
       display: flex;
       align-items: center;
+      gap: 6px;
       list-style: none;
-      gap: clamp(14px, 2vw, 28px);
-      font-size: 14.5px;
-      color: var(--text-muted);
-      font-weight: 500;
       margin: 0;
-      padding: 0;
+      padding: 4px;
+      background: rgba(18, 19, 26, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 9999px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
     }
 
-    .nav__links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      transition: color 0.18s ease;
-      text-decoration: none;
-      color: var(--text-muted);
-    }
-
-    .nav__links a:hover,
-    .nav__links a.is-active {
-      color: #ffffff;
-    }
-
-    .nav-icon {
-      width: 15px;
-      height: 15px;
-      opacity: 0.85;
-      transition: opacity 0.18s ease;
-      flex-shrink: 0;
-    }
-
-    .nav__links a:hover .nav-icon,
-    .nav__links a.is-active .nav-icon,
-    .nav__dropdown-trigger:hover .nav-icon,
-    .nav__item--dropdown:hover .nav-icon,
-    .nav__item--dropdown.is-active .nav-icon {
-      opacity: 1;
-    }
-
-    /* DROPDOWN (Exact match to media_1789901377203.png) */
-    .nav__item--dropdown {
-      position: relative;
-    }
-
+    .nav__links a,
     .nav__dropdown-trigger {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
-      background: transparent;
-      border: 0;
-      padding: 0;
-      margin: 0;
-      font-family: inherit;
-      font-size: 14.5px;
+      gap: 8px;
+      padding: 8px 16px;
+      font-size: 14px;
       font-weight: 500;
-      color: var(--text-muted);
+      color: rgba(255, 255, 255, 0.72);
+      text-decoration: none;
+      border-radius: 9999px;
+      border: none;
+      background: transparent;
       cursor: pointer;
-      transition: color 0.18s ease;
+      font-family: inherit;
+      transition: all 0.2s ease;
     }
 
+    .nav__links a:hover,
     .nav__dropdown-trigger:hover,
-    .nav__item--dropdown:hover .nav__dropdown-trigger,
-    .nav__item--dropdown.is-active .nav__dropdown-trigger {
+    .nav__links a.is-active {
       color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-icon {
+      width: 16px;
+      height: 16px;
+      opacity: 0.85;
+      flex-shrink: 0;
     }
 
     .nav__chevron {
       width: 14px;
       height: 14px;
-      transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+      opacity: 0.7;
+      transition: transform 0.2s ease;
     }
 
-    .nav__item--dropdown:hover .nav__chevron,
-    .nav__item--dropdown.is-active .nav__chevron {
-      transform: rotate(180deg);
+    .nav__item--dropdown {
+      position: relative;
     }
 
     .nav__dropdown-menu {
       position: absolute;
-      top: calc(100% + 14px);
+      top: calc(100% + 12px);
       left: 50%;
       transform: translateX(-50%) translateY(8px);
-      width: 360px;
-      background: #09090c;
+      min-width: 290px;
+      background: rgba(15, 16, 22, 0.95);
       border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 18px;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.95);
+      border-radius: 16px;
+      padding: 8px;
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       opacity: 0;
       visibility: hidden;
-      pointer-events: none;
-      transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.22s;
-      z-index: 200;
-      overflow: hidden;
-      padding: 8px 8px 0 8px;
-      text-align: left;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
     }
 
-    .nav__item--dropdown:hover .nav__dropdown-menu,
-    .nav__item--dropdown:focus-within .nav__dropdown-menu,
-    .nav__item--dropdown.is-active .nav__dropdown-menu {
+    .nav__item--dropdown.is-open .nav__dropdown-menu {
       opacity: 1;
       visibility: visible;
-      pointer-events: auto;
       transform: translateX(-50%) translateY(0);
     }
 
-    .dropdown__list {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      padding: 0;
+    .nav__item--dropdown.is-open .nav__chevron {
+      transform: rotate(180deg);
     }
 
     .dropdown__item {
       display: flex;
       align-items: flex-start;
-      gap: 14px;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border: 1px solid transparent;
-      text-decoration: none !important;
-      transition: all 0.18s ease;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.2s ease;
     }
 
-    .dropdown__item:hover,
-    .dropdown__item:focus,
-    .dropdown__item.is-active {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.85);
-    }
-
-    .dropdown__icon {
-      width: 22px;
-      height: 22px;
-      color: #c084fc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: 0 0 22px;
-      margin-top: 2px;
+    .dropdown__item:hover {
+      background: rgba(255, 255, 255, 0.08);
     }
 
     .dropdown__icon svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    .dropdown__content {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      min-width: 0;
+      width: 18px;
+      height: 18px;
+      color: #c084fc;
+      margin-top: 2px;
     }
 
     .dropdown__title {
-      font-size: 14px;
-      font-weight: 700;
+      font-size: 13.5px;
+      font-weight: 600;
       color: #ffffff;
-      line-height: 1.3;
       margin-bottom: 2px;
     }
 
     .dropdown__desc {
-      font-size: 12.5px;
-      color: rgba(255, 255, 255, 0.65);
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, 0.55);
       line-height: 1.4;
-      font-weight: 400;
-    }
-
-    .dropdown__footer {
-      display: block;
-      margin-top: 8px;
-      padding: 12px 14px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 13px;
-      font-weight: 600;
-      color: #c084fc;
-      text-decoration: none;
-      transition: color 0.18s ease, background 0.18s ease;
-    }
-
-    .dropdown__footer:hover {
-      color: #e9d5ff;
-      background: rgba(255, 255, 255, 0.03);
     }
 
     .nav__actions {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
     }
 
     .btn-dark {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background: #ffffff;
-      color: #000000;
+      padding: 9px 18px;
       font-size: 13.5px;
-      font-weight: 700;
-      padding: 9px 20px;
-      border-radius: 8px;
-      transition: background 0.2s ease;
+      font-weight: 600;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 9999px;
       text-decoration: none;
+      transition: all 0.2s ease;
     }
 
     .btn-dark:hover {
-      background: #e2e8f0;
+      background: rgba(255, 255, 255, 0.18);
+      border-color: rgba(255, 255, 255, 0.35);
+      transform: translateY(-1px);
+    }
+
+    .btn-light {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #000000;
+      background: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-light:hover {
+      background: rgba(255, 255, 255, 0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
     }
 
     .nav__toggle {
       display: none;
-      background: none;
-      border: 0;
-      color: #ffffff;
+      background: transparent;
+      border: none;
       cursor: pointer;
-      width: 36px;
-      height: 36px;
-      position: relative;
+      padding: 6px;
+      flex-direction: column;
+      gap: 5px;
     }
 
     .nav__toggle .bar {
-      position: absolute;
-      left: 8px;
-      right: 8px;
+      width: 22px;
       height: 2px;
       background: #ffffff;
+      border-radius: 2px;
+      transition: all 0.2s ease;
     }
 
-    .nav__toggle .top { top: 12px; }
-    .nav__toggle .mid { top: 17px; }
-    .nav__toggle .bot { top: 22px; }
-
-    @media (max-width: 920px) {
-      .nav__toggle { display: block; }
-      .nav__nav {
-        position: fixed;
-        top: 65px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(5, 5, 8, 0.98);
-        backdrop-filter: blur(20px);
-        padding: 30px var(--gutter);
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .nav__nav.is-open { display: flex; }
-      .nav__links {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 22px;
-        font-size: 17px;
-      }
-      .nav__dropdown-menu {
-        position: static;
-        transform: none !important;
-        width: 100%;
-        box-shadow: none;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        margin-top: 10px;
-        display: block;
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
-    /* Hero Stage */
-    .hero__stage {
-      flex: 1 1 auto;
-      min-height: 0;
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 85vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 24px;
-      margin-top: -60px;
+      justify-content: space-between;
+      overflow: hidden;
+      padding-bottom: clamp(48px, 8vh, 80px);
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero__bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0.82;
+      filter: brightness(0.9);
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-height: 75vh;
+      justify-content: space-between;
+    }
+
+    .hero__stage {
+      max-width: var(--shell);
+      margin: auto auto 0;
+      padding: 0 var(--gutter);
+      width: 100%;
+      text-align: left;
     }
 
     .hero__headline {
-      margin: 0;
-      font-size: clamp(38px, 6.4vw, 86px);
-      line-height: 1.12;
+      font-size: clamp(38px, 6.8vw, 84px);
       font-weight: 700;
-      letter-spacing: -0.03em;
-      max-width: none;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
       color: #ffffff;
-      text-align: center;
+      margin: 0;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
+      gap: 6px;
     }
 
     .hero__signature {
       font-family: 'Bumgreks Signature', cursive, sans-serif;
       font-weight: normal;
-      font-style: normal;
-      font-size: 1.2em;
-      line-height: 1;
-      display: block;
-      margin-top: 0;
-      color: #ffffff;
-      margin-left: 0;
-      letter-spacing: normal;
-      text-align: center;
+      color: #f43f5e;
+      font-size: 1.25em;
+      letter-spacing: 0;
+      margin-top: -6px;
     }
 
-    /* ==========================================================================
-       SECTION 2: ABOUT US (IMAGE & STATISTICS)
-       ========================================================================== */
+    /* SECTION 2: ABOUT US */
     .section-about {
       position: relative;
+      padding: clamp(60px, 8vh, 100px) var(--gutter);
       background: #000000;
-      padding: clamp(40px, 5vh, 64px) var(--gutter);
-          }
+      z-index: 2;
+    }
 
     .about__container {
       max-width: var(--shell);
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 26px;
     }
 
     .about__showcase {
       display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
-      gap: clamp(24px, 4vw, 54px);
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: clamp(32px, 5vw, 64px);
       align-items: center;
-    }
-
-    .about__media-frame {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      background: rgba(255, 255, 255, 0.04);
-      box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.6);
-      aspect-ratio: 16 / 10;
-    }
-
-    .about__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: brightness(0.85) contrast(1.08);
-      transition: transform 0.6s var(--ease);
-    }
-
-    .about__media-frame:hover .about__img {
-      transform: scale(1.02);
-    }
-
-    .about__media-badge {
-      position: absolute;
-      bottom: 16px;
-      left: 16px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: rgba(0, 0, 0, 0.82);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #ffffff;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-    }
-
-    .about__media-badge svg {
-      color: #c084fc;
-    }
-
-    .about__header {
-      margin: 0 0 2px 0;
+      margin-bottom: clamp(48px, 6vh, 72px);
     }
 
     .about__narrative {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 18px;
     }
 
-    .about__pillar {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 14px;
-      padding: 16px 20px;
-      transition: background 0.25s ease, border-color 0.25s ease;
+    .about__lead {
+      font-size: clamp(16px, 1.8vw, 19px);
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.88);
+      margin: 0;
     }
 
-    .about__pillar:hover {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(255, 255, 255, 0.16);
+    .about__subtext {
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.62);
+      margin: 0;
     }
 
-    .pillar__icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      background: rgba(244, 63, 94, 0.14);
-      color: #f43f5e;
+    .about__cta-row {
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex: 0 0 auto;
+      gap: 14px;
+      margin-top: 8px;
     }
 
-    .pillar__icon svg {
-      width: 20px;
-      height: 20px;
+    .about__media-frame {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6);
     }
 
-    .about__pillar h4 {
-      margin: 0 0 6px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #ffffff;
+    .about__img {
+      width: 100%;
+      height: 100%;
+      max-height: 380px;
+      object-fit: cover;
+      display: block;
     }
 
-    .about__pillar p {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.55;
-      color: rgba(255, 255, 255, 0.7);
-    }
-
-    /* Statistics Grid */
     .stats__grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: clamp(14px, 2vw, 24px);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .stat__card {
-      background: #050505;
+      background: rgba(18, 19, 26, 0.6);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 16px;
-      padding: clamp(20px, 3vh, 32px) clamp(16px, 2vw, 24px);
-      text-align: left;
-      transition: transform 0.25s ease, border-color 0.25s ease;
-    }
-
-    .stat__card:hover {
-      transform: translateY(-2px);
-      border-color: rgba(255, 255, 255, 0.18);
+      padding: 24px;
+      text-align: center;
     }
 
     .stat__num {
       display: block;
-      font-size: clamp(32px, 3.6vw, 48px);
+      font-size: clamp(32px, 4vw, 48px);
       font-weight: 700;
-      letter-spacing: -0.04em;
-      line-height: 1;
+      color: #ffffff;
+      line-height: 1.1;
+      margin-bottom: 6px;
       background: linear-gradient(135deg, #ffffff 40%, rgba(255, 255, 255, 0.6) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 8px;
     }
 
     .stat__label {
-      display: block;
-      font-size: 14.5px;
-      font-weight: 600;
-      color: #ffffff;
-      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.65);
     }
 
-    .stat__desc {
-      margin: 0;
-      font-size: 13px;
-      line-height: 1.5;
-      color: rgba(255, 255, 255, 0.6);
-    }
-
-    /* ==========================================================================
-       SECTION 3: WHAT WE OFFER (4 GLASS CARDS IN 1 ROW)
-       ========================================================================== */
+    /* SECTION 3: WHAT WE OFFER (CARDS) */
     .stage {
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: clamp(40px, 5vh, 64px) var(--gutter);
+      padding: clamp(60px, 8vh, 100px) var(--gutter);
       background: #000000;
-          }
+      z-index: 2;
+    }
 
     .offer__intro-wrap {
       width: 100%;
       max-width: var(--shell);
-      margin: 0 auto 32px;
+      margin: 0 auto 36px;
       text-align: left;
     }
 
-    section.cards,
     .cards {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: clamp(10px, 1.4vw, 20px);
+      gap: clamp(12px, 1.6vw, 22px);
       width: 100%;
-      max-width: 1360px;
+      max-width: var(--shell);
       margin: 0 auto;
-      padding: 0;
+    }
+
+    .card {
       position: relative;
-      z-index: 2;
-      box-sizing: border-box;
+      background: #08090d;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: all 0.28s ease;
+      min-height: 280px;
     }
 
-    /* compact card styles consolidated below */
-
-    .card__media {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: fill;
-      pointer-events: none;
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.8);
     }
 
-    .card__grain {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      opacity: .18;
-      mix-blend-mode: overlay;
-      pointer-events: none;
+    .card__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
     }
 
-    .card__title {
-      position: absolute;
-      top: 6.8%;
-      left: 7.5%;
-      right: 7.5%;
-      margin: 0;
-      color: #ffffff;
-      font-size: calc(21.5 * var(--u));
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      line-height: 1.25;
-      z-index: 3;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    .card__icon svg {
+      width: 28px;
+      height: 28px;
+      color: #f43f5e;
     }
 
     .card__tag {
-      position: absolute;
-      top: 48%;
-      left: 7.5%;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: calc(3.5 * var(--u)) calc(10 * var(--u));
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.14);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      color: #ffffff;
-      font-size: calc(11.5 * var(--u));
+      font-size: 11.5px;
       font-weight: 600;
-      letter-spacing: 0.04em;
       text-transform: uppercase;
-      z-index: 3;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      letter-spacing: 0.05em;
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.06);
+      padding: 4px 10px;
+      border-radius: 9999px;
+    }
+
+    .card__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.3;
+      margin: 0;
     }
 
     .card__desc {
-      position: absolute;
-      top: 55%;
-      left: 7.5%;
-      right: 7.5%;
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.65);
       margin: 0;
-      color: rgba(255, 255, 255, 0.9);
-      font-size: calc(15 * var(--u));
-      line-height: 1.5;
-      font-weight: 400;
-      letter-spacing: -0.01em;
-      z-index: 3;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     }
 
-    /* Card 1: Speed / Community */
-    .card--speed {
-      background:
-        radial-gradient(ellipse 34% 24% at 50% 2%, rgba(255,220,211,.10) 0%, transparent 76%),
-        radial-gradient(ellipse 44% 34% at 106% 20%, rgba(255,222,211,.10) 0%, transparent 74%),
-        radial-gradient(ellipse 40% 27% at 50% 82%, rgba(255,214,208,.08) 0%, transparent 74%),
-        radial-gradient(ellipse 43% 31% at -7% 61%, rgba(127,31,53,.06) 0%, transparent 74%),
-        radial-gradient(ellipse 47% 34% at 107% 82%, rgba(119,29,49,.07) 0%, transparent 74%),
-        linear-gradient(180deg, rgba(255,246,241,.43) 0%, rgba(255,237,235,.19) 9%, transparent 22%),
-        radial-gradient(ellipse 44% 34% at 50% 111%, rgba(55,0,20,.16) 0%, transparent 74%),
-        radial-gradient(ellipse 105% 32% at 50% 80%, rgba(255,218,204,.20) 0%, rgba(255,205,196,.10) 48%, transparent 78%),
-        radial-gradient(ellipse 55% 22% at -5% 39%, rgba(240,250,200,.15) 0%, transparent 76%),
-        radial-gradient(ellipse 64% 49% at -8% 106%, rgba(255,222,199,.48) 0%, rgba(255,204,192,.25) 49%, transparent 78%),
-        radial-gradient(ellipse 64% 49% at 108% 106%, rgba(255,222,199,.43) 0%, rgba(255,204,192,.22) 49%, transparent 78%),
-        radial-gradient(ellipse 52% 54% at -8% 44%, rgba(255,216,207,.20) 0%, transparent 77%),
-        radial-gradient(ellipse 68% 45% at -4% -3%, rgba(255,235,232,.73) 0%, rgba(255,226,226,.41) 46%, transparent 77%),
-        radial-gradient(ellipse 70% 45% at 104% -4%, rgba(255,238,233,.78) 0%, rgba(255,226,226,.42) 48%, transparent 78%),
-        radial-gradient(ellipse 93% 47% at 106% 58%, rgba(245,247,241,.73) 0%, rgba(246,231,229,.42) 48%, transparent 76%),
-        radial-gradient(ellipse 74% 40% at -8% 73%, rgba(255,210,190,.48) 0%, rgba(255,194,181,.25) 48%, transparent 77%),
-        radial-gradient(ellipse 77% 36% at 57% 58%, rgba(255,226,218,.30) 0%, rgba(255,206,207,.15) 50%, transparent 78%),
-        radial-gradient(ellipse 54% 30% at 50% 17%, rgba(106,8,51,.22) 0%, transparent 78%),
-        linear-gradient(180deg, #bd4468 0%, #ad355b 38%, #a63b50 72%, #8c1320 100%);
-    }
-
-    .gauge {
-      position: absolute;
-      z-index: 2;
-      top: 22%;
-      left: 10.5%;
-      width: 79%;
-      height: 59%;
-      overflow: visible;
-      pointer-events: none;
-    }
-
-    /* Card 2: Context / Multi-gaming */
-    .card--context {
-      background:
-        radial-gradient(ellipse 118% 66% at 48% -8%, rgba(221,232,255,.065), transparent 74%),
-        radial-gradient(ellipse 106% 52% at 48% 112%, rgba(255,155,139,.075), transparent 73%),
-        radial-gradient(ellipse 82% 15% at 50% 29%, rgba(240,204,244,.24), transparent 81%),
-        radial-gradient(ellipse 64% 18% at 50% 61%, rgba(239,177,208,.17), transparent 81%),
-        radial-gradient(ellipse 43% 42% at -5% 30%, rgba(228,220,255,.53), transparent 78%),
-        radial-gradient(ellipse 43% 42% at 105% 30%, rgba(245,200,210,.54), transparent 78%),
-        radial-gradient(ellipse 70% 48% at 70% 110%, rgba(238,204,201,.62), transparent 77%),
-        radial-gradient(ellipse 70% 23% at 78% 1%, rgba(251,208,226,.56), transparent 78%),
-        radial-gradient(ellipse 78% 25% at 15% 8%, rgba(218,211,255,.54), transparent 79%),
-        radial-gradient(ellipse 38% 31% at 80% 90%, rgba(230,190,191,.38), transparent 74%),
-        radial-gradient(ellipse 45% 26% at 47% 78%, rgba(236,184,183,.45), transparent 73%),
-        linear-gradient(164deg, #c9b5e1 0%, #ad80ca 29%, #9d4f72 64%, #793246 100%);
-    }
-
-    .context-glow {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      pointer-events: none;
-      background:
-        radial-gradient(ellipse 18% 23% at 20% 32%, rgba(103,41,148,.24), transparent 76%),
-        radial-gradient(ellipse 20% 24% at 81% 30%, rgba(121,34,113,.22), transparent 76%),
-        radial-gradient(ellipse 66% 9% at 50% 30%, rgba(103,33,125,.26), transparent 82%),
-        radial-gradient(ellipse 68% 8% at 50% 69%, rgba(86,27,64,.23), transparent 83%),
-        linear-gradient(103deg, rgba(255,255,255,.08), transparent 31%, rgba(255,255,255,.05) 63%, transparent 88%);
-    }
-
-    .context-backdrop {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      overflow: hidden;
-      pointer-events: none;
-    }
-
-    .context-backdrop svg {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    .context-window {
-      position: absolute;
-      z-index: 3;
-      top: 25%;
-      left: 20.4%;
-      width: 59%;
-      height: 25%;
-      overflow: hidden;
-      border-radius: calc(10 * var(--u));
-      background:
-        linear-gradient(0deg, rgba(255,255,255,.30) 0%, rgba(255,255,255,.15) 45%, rgba(255,255,255,0) 80%),
-        linear-gradient(270deg, rgba(213,62,152,.62) 0px, rgba(213,62,152,0) calc(5 * var(--u))),
-        radial-gradient(ellipse 118% 70% at 60% 8%, rgba(255,203,252,.34), transparent 74%),
-        linear-gradient(105deg, rgba(250,232,250,.72) 0%, rgba(238,120,214,.68) 51%, rgba(222,86,177,.82) 100%);
-      box-shadow: 0 calc(13 * var(--u)) calc(25 * var(--u)) rgba(70,17,69,.31), inset 0 1px 0 rgba(255,255,255,.12);
-      backdrop-filter: blur(calc(9 * var(--u))) saturate(1.08);
-      -webkit-backdrop-filter: blur(calc(9 * var(--u))) saturate(1.08);
-      pointer-events: none;
-    }
-
-    .context-window__grain {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      opacity: .28;
-      mix-blend-mode: overlay;
-    }
-
-    .window-lines {
-      position: absolute;
-      z-index: 2;
-      top: calc(17 * var(--u));
-      left: calc(18 * var(--u));
-      right: calc(18 * var(--u));
-      display: flex;
-      flex-direction: column;
-      gap: calc(13 * var(--u));
-    }
-
-    .window-lines .span1 {
-      width: 100%;
-      height: calc(12 * var(--u));
-      border-radius: calc(6 * var(--u));
-      background: rgba(255,255,255,.72);
-      box-shadow: 0 1px 2px rgba(119,34,98,.12);
-    }
-
-    .window-lines .span2 {
-      width: 100%;
-      height: calc(12 * var(--u));
-      border-radius: calc(6 * var(--u));
-      background: linear-gradient(90deg, rgba(255,240,253,.72), rgba(255,170,242,.75) 42%, rgba(255,108,235,.78));
-      box-shadow: 0 1px 2px rgba(119,34,98,.12);
-    }
-
-    .window-lines .span3 {
-      width: 70%;
-      height: calc(12 * var(--u));
-      border-radius: calc(6 * var(--u));
-      background: rgba(255,255,255,.72);
-      box-shadow: 0 1px 2px rgba(119,34,98,.12);
-    }
-
-    /* Card 3: Connections / Convoys */
-    .card--connections {
-      background:
-        radial-gradient(ellipse 54% 14% at 56% 0%, rgba(255,206,190,.16), transparent 76%),
-        radial-gradient(ellipse 38% 24% at 102% 8%, rgba(255,190,164,.24), transparent 75%),
-        radial-gradient(ellipse 28% 24% at -5% 66%, rgba(255,192,174,.30), transparent 74%),
-        radial-gradient(ellipse 46% 30% at 104% 32%, rgba(255,146,52,.42), transparent 74%),
-        radial-gradient(ellipse 80% 36% at 62% 57%, rgba(255,141,36,.62), transparent 72%),
-        radial-gradient(ellipse 58% 30% at 6% 103%, rgba(199,49,45,.38), transparent 76%),
-        radial-gradient(ellipse 60% 32% at 97% 101%, rgba(190,40,44,.42), transparent 76%),
-        linear-gradient(177deg, #d84736 0%, #dd523c 24%, #e8703d 52%, #de5641 78%, #d34239 100%);
-    }
-
-    .connections-map {
-      position: absolute;
-      z-index: 2;
-      top: 20%;
-      left: 0;
-      width: 100%;
-      height: 40%;
-      opacity: .82;
-      pointer-events: none;
-    }
-
-    .connections-map svg {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    /* Card 4: Staff Team */
-    .card--staff {
-      background:
-        radial-gradient(ellipse 54% 20% at 50% 2%, rgba(192, 132, 252, 0.18) 0%, transparent 76%),
-        radial-gradient(ellipse 44% 34% at 106% 20%, rgba(168, 85, 247, 0.22) 0%, transparent 74%),
-        radial-gradient(ellipse 43% 42% at -5% 30%, rgba(147, 51, 234, 0.28) 0%, transparent 78%),
-        radial-gradient(ellipse 70% 45% at 104% -4%, rgba(192, 132, 252, 0.35) 0%, transparent 78%),
-        radial-gradient(ellipse 80% 36% at 62% 57%, rgba(147, 51, 234, 0.32) 0%, transparent 72%),
-        radial-gradient(ellipse 64% 49% at 108% 106%, rgba(88, 28, 135, 0.45) 0%, transparent 78%),
-        linear-gradient(175deg, #000000 0%, #160d24 32%, #24103a 68%, #080808 100%);
-    }
-
-    .staff-emblem {
-      position: absolute;
-      top: 18%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 76%;
-      height: 46%;
-      z-index: 2;
-      pointer-events: none;
-      opacity: 0.85;
-    }
-
-    /* ==========================================================================
-       SECTION 4: UPCOMING EVENTS (IMAGE 1 STYLE - 3 CARDS IN 1 ROW)
-       ========================================================================== */
+    /* SECTION 4: UPCOMING EVENTS */
     .section-events {
       position: relative;
+      padding: clamp(60px, 8vh, 100px) var(--gutter);
       background: #000000;
-      padding: clamp(40px, 5vh, 64px) var(--gutter);
+      z-index: 2;
     }
 
     .events__container {
       max-width: var(--shell);
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
     }
 
     .events__header {
-      width: 100%;
-      text-align: left;
+      margin-bottom: 36px;
     }
 
     .events__grid-cards {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-      width: 100%;
-    }
-
-    @media (max-width: 960px) {
-      .events__grid-cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 620px) {
-      .events__grid-cards {
-        grid-template-columns: 1fr;
-      }
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(16px, 2vw, 26px);
     }
 
     .event-card {
-      background: #050505;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #0a0b10;
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 18px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      position: relative;
-      font-family: 'Montserrat', -apple-system, sans-serif;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7);
-      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
-      box-sizing: border-box;
+      transition: all 0.28s ease;
     }
 
     .event-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(255, 255, 255, 0.18);
-      box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.9);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7);
     }
 
     .event-card__banner-wrap {
       position: relative;
       width: 100%;
-      aspect-ratio: 1920 / 500;
-      min-height: 115px;
+      height: 170px;
+      background: #14151e;
       overflow: hidden;
-      background: #050505;
     }
 
     .event-card__banner {
@@ -1169,992 +677,273 @@
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.45s ease;
-    }
-
-    .event-card:hover .event-card__banner {
-      transform: scale(1.03);
-    }
-
-    .event-card__banner-wrap::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background: linear-gradient(to top, #050505 0%, rgba(5, 5, 5, 0.35) 30%, transparent 70%);
     }
 
     .event-card__date-badge {
       position: absolute;
       top: 12px;
       left: 12px;
-      z-index: 2;
-      width: 48px;
-      height: 52px;
-      background: rgba(15, 11, 24, 0.92);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(10, 11, 16, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+      padding: 6px 10px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
     }
 
     .event-card__badge-day {
-      font-size: 20px;
+      display: block;
+      font-size: 16px;
       font-weight: 700;
       color: #ffffff;
       line-height: 1;
-      font-family: 'Montserrat', sans-serif;
     }
 
     .event-card__badge-month {
-      font-size: 11px;
+      display: block;
+      font-size: 10px;
       font-weight: 700;
-      color: #c084fc;
+      color: #f43f5e;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-top: 3px;
-      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.05em;
+      margin-top: 2px;
     }
 
-    /* 050505 UPPER BODY */
     .event-card__body {
-      padding: 18px 22px 18px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
-      flex: 1 1 auto;
-      background: #050505;
+      gap: 12px;
+      flex: 1;
     }
 
     .event-card__title {
       font-size: 16px;
       font-weight: 700;
       color: #ffffff;
-      margin: 0 0 12px 0;
       line-height: 1.35;
-      letter-spacing: -0.01em;
-      min-height: 44px;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      font-family: 'Montserrat', sans-serif;
+      margin: 0;
     }
 
     .event-card__meta-top {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      font-size: 13.5px;
-      color: rgba(255, 255, 255, 0.55);
-      margin-bottom: 8px;
-      font-weight: 500;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
     .event-card__game {
-      color: rgba(255, 255, 255, 0.8);
-      font-weight: 600;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      padding: 3px 8px;
+      border-radius: 6px;
     }
 
     .event-card__server {
-      color: rgba(255, 255, 255, 0.55);
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.06);
+      padding: 3px 8px;
+      border-radius: 6px;
     }
 
     .event-card__route {
-      font-size: 14.5px;
-      font-weight: 600;
-      color: #c084fc;
-      margin-bottom: 14px;
       display: flex;
       align-items: center;
-      gap: 7px;
+      gap: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
     }
 
     .event-card__route-arrow {
-      color: #a855f7;
-      font-size: 15px;
+      color: #f43f5e;
     }
 
     .event-card__times {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      margin-bottom: 2px;
+      gap: 6px;
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.6);
     }
 
     .event-card__time-row {
       display: flex;
       align-items: center;
-      gap: 9px;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.65);
+      gap: 7px;
     }
 
     .event-card__time-icon {
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       color: #c084fc;
-      flex: 0 0 15px;
+      flex-shrink: 0;
     }
 
-    /* FOOTER BAR */
     .event-card__footer {
-      background: #0d0d0d;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 13px 20px 15px;
+      padding: 14px 20px 20px;
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-top: auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .event-card__btn {
-      flex: 1 1 50%;
+      flex: 1;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 7px;
-      padding: 10px 14px;
-      border-radius: 9px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 13px;
-      font-weight: 700;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 12.5px;
+      font-weight: 600;
+      border-radius: 8px;
       text-decoration: none;
-      text-align: center;
-      white-space: nowrap;
-      transition: background 0.18s ease, border-color 0.18s ease;
-      box-sizing: border-box;
+      transition: all 0.2s ease;
     }
 
     .event-card__btn svg {
-      width: 15px;
-      height: 15px;
-      flex: 0 0 15px;
-      display: inline-block;
-      vertical-align: middle;
+      width: 14px;
+      height: 14px;
     }
 
     .event-card__btn--more {
-      background: #9333ea;
       color: #ffffff;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
     }
 
     .event-card__btn--more:hover {
-      background: #a855f7;
-    }
-
-    .event-card__btn--page {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #ffffff;
-    }
-
-    .event-card__btn--page:hover {
-      background: rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.15);
       border-color: rgba(255, 255, 255, 0.25);
     }
 
-    /* ==========================================================================
-       SECTION 5: OUR PARTNERS
-       ========================================================================== */
+    .event-card__btn--page {
+      color: #000000;
+      background: #ffffff;
+      border: 1px solid #ffffff;
+    }
+
+    .event-card__btn--page:hover {
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    /* SECTION 5: OUR PARTNERS */
     .section-partners {
       position: relative;
+      padding: clamp(60px, 8vh, 100px) var(--gutter);
       background: #000000;
-      padding: clamp(40px, 5vh, 64px) var(--gutter);
-      overflow: hidden;
+      z-index: 2;
     }
 
     .partners__container {
-      width: 100%;
       max-width: var(--shell);
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
     }
 
     .partners__header {
-      width: 100%;
-      text-align: left;
-    }
-
-    .partners__title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: clamp(28px, 3.2vw, 38px);
-      font-weight: 700;
-      color: #c084fc;
-      margin: 0;
-      letter-spacing: -0.02em;
-      text-shadow: 0 0 24px rgba(168, 85, 247, 0.35);
+      margin-bottom: 36px;
     }
 
     .partners__marquee-wrapper {
       position: relative;
-      width: 100%;
       overflow: hidden;
-      padding: 10px 0 16px;
-      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      width: 100%;
+      border-radius: 20px;
+      background: #08090d;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 28px 20px;
     }
 
     .partners__track {
       display: flex;
       align-items: center;
-      gap: 16px;
-      width: max-content;
-      animation: partners-marquee 32s linear infinite;
+      gap: 28px;
+      overflow-x: auto;
+      scrollbar-width: none;
     }
 
-    .partners__marquee-wrapper:hover .partners__track {
-      animation-play-state: paused;
-    }
-
-    @keyframes partners-marquee {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
+    .partners__track::-webkit-scrollbar {
+      display: none;
     }
 
     .partner-logo-card {
-      width: 170px;
-      height: 100px;
-      flex: 0 0 170px;
-      background: #050505;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 14px;
-      text-decoration: none;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
-      transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.26s ease,
-                  background 0.26s ease,
-                  box-shadow 0.26s ease;
-      box-sizing: border-box;
-      position: relative;
+      min-width: 140px;
+      height: 90px;
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.25s ease;
+      flex-shrink: 0;
     }
 
     .partner-logo-card:hover {
-      transform: translateY(-4px);
-      background: #050505;
+      background: rgba(255, 255, 255, 0.08);
       border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.7);
+      transform: translateY(-3px);
     }
 
     .partner-logo-img {
-      max-width: 64px;
-      max-height: 64px;
-      width: auto;
-      height: auto;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: contain;
-      filter: grayscale(25%) brightness(0.92);
-      opacity: 0.85;
-      transition: transform 0.26s ease, filter 0.26s ease, opacity 0.26s ease;
-      display: block;
-      pointer-events: none;
+      filter: grayscale(0.2);
+      transition: filter 0.25s ease;
     }
 
     .partner-logo-card:hover .partner-logo-img {
-      filter: grayscale(0%) brightness(1.08);
-      opacity: 1;
-      transform: scale(1.08);
+      filter: grayscale(0);
     }
 
-    /* ==========================================================================
-       SECTION 6: FOOTER
-       ========================================================================== */
+    /* SECTION 6: FOOTER */
     .site-footer {
-      background: #050505;
+      position: relative;
+      background: #040406;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding: clamp(60px, 8vh, 100px) var(--gutter) 40px;
+      padding: clamp(48px, 6vh, 72px) var(--gutter) 28px;
+      z-index: 2;
     }
 
     .footer__container {
       max-width: var(--shell);
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: clamp(40px, 6vh, 64px);
     }
 
     .footer__top {
       display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 2fr);
+      grid-template-columns: 1.4fr 2fr;
       gap: clamp(32px, 5vw, 64px);
+      margin-bottom: 48px;
     }
 
     .footer__brand {
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
 
     .footer__tagline {
-      margin: 0;
-      font-size: 14.5px;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.65);
-      max-width: 36ch;
-    }
-
-    .footer__nav {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 28px;
-    }
-
-    .footer__col h5 {
-      margin: 0 0 16px;
-      font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #ffffff;
-    }
-
-    .footer__col ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .footer__col a {
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.65);
-      text-decoration: none;
-      transition: color 0.18s ease;
-    }
-
-    .footer__col a:hover {
-      color: #ffffff;
-    }
-
-    .footer__bottom {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding-top: 30px;
-          }
-
-    .footer__bottom p {
-      margin: 0;
-      font-size: 12.5px;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.45);
-      max-width: 80ch;
-    }
-
-    .back-to-top {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      font-weight: 500;
-      color: rgba(255, 255, 255, 0.7);
-      text-decoration: none;
-      transition: color 0.18s ease;
-    }
-
-    .back-to-top:hover {
-      color: #ffffff;
-    }
-
-    /* Responsive Queries */
-    @media (max-width: 1080px) {
-      .partners__grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-      .stats__grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 900px) {
-      .nav__links {
-        display: none;
-      }
-      .nav__nav.is-open .nav__links {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        inset: 72px 0 0;
-        background: rgba(10, 10, 12, 0.98);
-        padding: 30px 24px 60px;
-        gap: 18px;
-        z-index: 100;
-        overflow-y: auto;
-      }
-      .nav__item--dropdown {
-        width: 100%;
-      }
-      .nav__nav.is-open .nav__dropdown-menu {
-        position: static;
-        transform: none;
-        width: 100%;
-        max-width: 100%;
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        box-shadow: none;
-        background: rgba(18, 18, 24, 0.85);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        margin-top: 10px;
-      }
-      .nav__toggle {
-        display: flex;
-      }
-      .about__showcase {
-        grid-template-columns: 1fr;
-      }
-      .events__grid {
-        grid-template-columns: 1fr;
-      }
-      .footer__top {
-        grid-template-columns: 1fr;
-      }
-      section.cards, .cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 16px;
-      }
-    }
-
-    @media (max-width: 580px) {
-      .hero__headline {
-        font-size: clamp(30px, 8vw, 44px);
-      }
-      .stats__grid {
-        grid-template-columns: 1fr;
-      }
-      .partners__grid {
-        grid-template-columns: 1fr;
-      }
-      .footer__nav {
-        grid-template-columns: 1fr;
-      }
-      section.cards, .cards {
-        grid-template-columns: minmax(0, 1fr);
-        max-width: 360px;
-      }
-    }
-
-  
-
-    /* Signature Font inline utility */
-    .sig-font {
-      font-family: 'Bumgreks Signature', cursive, sans-serif;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 1.3em;
-      color: #ffffff;
-      display: inline-block;
-      vertical-align: baseline;
-      margin-left: 0.12em;
-    }
-
-    /* 3-Column Statistics Grid */
-    .stats__grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: clamp(16px, 2vw, 24px);
-    }
-
-    /* ==========================================================================
-       OFFER CARDS: COMPACT & RUNNING GRADIENT EFFECT
-       ========================================================================== */
-    @keyframes run-gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    @keyframes ambient-glow {
-      0%, 100% {
-        opacity: 0.55;
-        transform: scale(1) translate(0, 0);
-      }
-      50% {
-        opacity: 0.85;
-        transform: scale(1.08) translate(4%, 3%);
-      }
-    }
-
-    section.cards,
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: clamp(10px, 1.4vw, 18px);
-      width: 100%;
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 0;
-      position: relative;
-      z-index: 2;
-      box-sizing: border-box;
-    }
-
-    .card {
-      position: relative;
-      overflow: hidden;
-      background: #050505;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 17px;
-      padding: clamp(20px, 2.8vh, 26px) clamp(16px, 1.6vw, 22px);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 12px;
-      min-height: 290px;
-      max-width: 310px;
-      width: 100%;
-      box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
-      box-sizing: border-box;
-      background-size: 240% 240% !important;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 20px 48px -10px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      top: -40%;
-      left: -40%;
-      width: 180%;
-      height: 180%;
-      background: radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.008) 40%, transparent 70%);
-      pointer-events: none;
-      animation: ambient-glow 7s ease-in-out infinite;
-      z-index: 1;
-    }
-
-    .card > * {
-      position: relative;
-      z-index: 2;
-    }
-
-    .card__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 2px;
-    }
-
-    .card__icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 11px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: 0 0 auto;
-    }
-
-    .card__icon svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    .card--speed .card__icon { color: #c084fc; }
-    .card--context .card__icon { color: #a855f7; }
-    .card--connections .card__icon { color: #f97316; }
-    .card--staff .card__icon { color: #c084fc; }
-
-    .card__tag {
-      position: static;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 4px 11px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-
-    .card__title {
-      position: static;
-      margin: 0;
-      color: #ffffff;
-      font-size: 17.5px;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      line-height: 1.28;
-    }
-
-    .card__desc {
-      position: static;
-      margin: 0;
-      color: rgba(255, 255, 255, 0.65);
       font-size: 13.5px;
-      line-height: 1.55;
-      font-weight: 400;
-      letter-spacing: -0.01em;
-    }
-
-    /* Dark Obsidian Running Gradients for each of the 4 cards */
-    .card--speed {
-      background: linear-gradient(135deg, #050505 0%, #160d24 25%, #24103a 50%, #080808 75%, #050505 100%);
-      border-color: rgba(255, 255, 255, 0.08);
-      animation: run-gradient 8s ease infinite;
-    }
-    .card--speed:hover {
-      border-color: rgba(255, 255, 255, 0.22);
-      box-shadow: 0 20px 48px -10px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    }
-
-    .card--context {
-      background: linear-gradient(135deg, #050505 0%, #120e1d 25%, #1a122e 50%, #080808 75%, #050505 100%);
-      border-color: rgba(255, 255, 255, 0.08);
-      animation: run-gradient 9.5s ease infinite 0.6s;
-    }
-    .card--context:hover {
-      border-color: rgba(255, 255, 255, 0.22);
-      box-shadow: 0 20px 48px -10px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    }
-
-    .card--connections {
-      background: linear-gradient(135deg, #050505 0%, #18100b 25%, #26160d 50%, #080808 75%, #050505 100%);
-      border-color: rgba(255, 255, 255, 0.08);
-      animation: run-gradient 8.5s ease infinite 1.2s;
-    }
-    .card--connections:hover {
-      border-color: rgba(255, 255, 255, 0.22);
-      box-shadow: 0 20px 48px -10px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    }
-
-    .card--staff {
-      background: linear-gradient(135deg, #050505 0%, #160d24 25%, #24103a 50%, #080808 75%, #050505 100%);
-      border-color: rgba(255, 255, 255, 0.08);
-      animation: run-gradient 10s ease infinite 1.8s;
-    }
-    .card--staff:hover {
-      border-color: rgba(255, 255, 255, 0.22);
-      box-shadow: 0 20px 48px -10px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    }
-
-    @media (max-width: 900px) {
-      .stats__grid {
-        grid-template-columns: 1fr;
-      }
-      section.cards, .cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 580px) {
-      section.cards, .cards {
-        grid-template-columns: 1fr;
-      }
-    }
-
-
-    .about__lead {
-      font-size: clamp(15px, 1.4vw, 17px);
-      line-height: 1.5;
-      color: rgba(255, 255, 255, 0.92);
-      font-weight: 500;
+      color: rgba(255, 255, 255, 0.55);
       margin: 0;
-    }
-
-    .about__subtext {
-      font-size: 14px;
       line-height: 1.5;
-      color: rgba(255, 255, 255, 0.68);
-      margin: 0;
     }
-
-    .about__cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 6px;
-    }
-
-
-            /* ==========================================================================
-       CHANGELOG MODAL & LAUNCHER (CENTERED POPUP FOR NEW VISITORS)
-       ========================================================================== */
-    .cl-modal-backdrop {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      background: rgba(4, 5, 8, 0.75);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
-    }
-
-    .cl-modal-backdrop.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
-
-    .cl-modal-card {
-      position: relative;
-      width: 100%;
-      max-width: 440px;
-      max-height: min(88vh, 760px);
-      background: #000000;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 22px;
-      box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.05);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      transform: scale(0.92) translateY(14px);
-      transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .cl-modal-backdrop.is-open .cl-modal-card {
-      transform: scale(1) translateY(0);
-    }
-
-    .cl-modal-close {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: rgba(15, 11, 24, 0.85);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: rgba(255, 255, 255, 0.7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 10;
-      transition: all 0.2s ease;
-      padding: 0;
-      backdrop-filter: blur(8px);
-    }
-
-    .cl-modal-close:hover {
-      background: rgba(255, 255, 255, 0.2);
-      color: #ffffff;
-      transform: scale(1.05);
-    }
-
-    .cl-modal-close svg {
-      width: 15px;
-      height: 15px;
-    }
-
-    .cl-scroll-body {
-      flex: 1 1 auto;
-      overflow-y: auto;
-      padding: 16px;
-      background: #000000;
-      scrollbar-width: thin;
-      scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
-    }
-
-    .cl-scroll-body::-webkit-scrollbar {
-      width: 5px;
-    }
-    .cl-scroll-body::-webkit-scrollbar-thumb {
-      background: rgba(255, 255, 255, 0.18);
-      border-radius: 99px;
-    }
-
-    .cl-card {
-      margin: 0 !important;
-      width: 100% !important;
-      border-radius: 16px !important;
-      background: #050505 !important;
-      border: 1px solid rgba(255, 255, 255, 0.1) !important;
-      box-shadow: none !important;
-    }
-
-    .cl-card-text {
-      font-size: 13.5px;
-      line-height: 1.55;
-      color: rgba(255, 255, 255, 0.7);
-      margin: 8px 0 12px;
-      font-weight: 400;
-      text-align: left;
-    }
-
-    .cl-highlights {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-      margin-top: 4px;
-      margin-bottom: 8px;
-      width: 100%;
-      text-align: left;
-    }
-
-    .cl-highlight-item {
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      font-size: 12.5px;
-      color: rgba(255, 255, 255, 0.85);
-      font-weight: 500;
-    }
-
-    .cl-h-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #c084fc;
-      box-shadow: 0 0 6px #c084fc;
-      flex-shrink: 0;
-    }
-
-    /* Floating Launcher Button */
-    .cl-launcher-btn {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: #121319;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6), 0 0 16px rgba(168, 85, 247, 0.25);
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 9990;
-      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, border-color 0.2s ease;
-      padding: 0;
-    }
-
-    .cl-launcher-btn:hover {
-      transform: scale(1.08);
-      background: #191a24;
-      border-color: rgba(255, 255, 255, 0.32);
-    }
-
-    .cl-launcher-btn svg {
-      width: 22px;
-      height: 22px;
-    }
-
-    .cl-launcher-dot {
-      position: absolute;
-      top: 2px;
-      right: 2px;
-      width: 12px;
-      height: 12px;
-      background: #ef4444;
-      border-radius: 50%;
-      border: 2px solid #121319;
-      box-shadow: 0 0 8px rgba(239, 68, 68, 0.7);
-      animation: clPulse 2s infinite;
-    }
-
-    @keyframes clPulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.15); opacity: 0.85; }
-    }
-
-    @media (max-width: 480px) {
-      .cl-modal-card {
-        max-height: 90vh;
-        border-radius: 20px;
-      }
-      .cl-scroll-body {
-        padding: 12px;
-      }
-      .cl-launcher-btn {
-        bottom: 18px;
-        right: 18px;
-        width: 46px;
-        height: 46px;
-      }
-    }
-      50% { transform: scale(1.15); opacity: 0.85; }
-    }
-
-    @media (max-width: 480px) {
-      .cl-modal-card {
-        max-height: 90vh;
-        border-radius: 20px;
-      }
-      .cl-scroll-body {
-        padding: 12px;
-      }
-      .cl-launcher-btn {
-        bottom: 18px;
-        right: 18px;
-        width: 46px;
-        height: 46px;
-      }
-    }
-      50% { transform: scale(1.15); opacity: 0.85; }
-    }
-
-    @media (max-width: 480px) {
-      .cl-modal-card {
-        max-height: 90vh;
-        border-radius: 20px;
-      }
-      .cl-scroll-body {
-        padding: 20px 18px 14px;
-      }
-      .cl-launcher-btn {
-        bottom: 18px;
-        right: 18px;
-        width: 46px;
-        height: 46px;
-      }
-    }
-
 
     .footer__social {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-top: 14px;
+      margin-top: 8px;
     }
+
     .social-link {
       width: 36px;
       height: 36px;
@@ -2168,19 +957,215 @@
       transition: all 0.2s ease;
       text-decoration: none;
     }
+
     .social-link svg {
       width: 17px;
       height: 17px;
     }
+
     .social-link:hover {
       background: rgba(255, 255, 255, 0.16);
       border-color: rgba(255, 255, 255, 0.4);
       color: #ffffff;
       transform: translateY(-2px);
     }
+
+    .footer__nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .footer__col h5 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      margin: 0 0 14px;
+    }
+
+    .footer__col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__col a {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer__col a:hover {
+      color: #ffffff;
+    }
+
+    .footer__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
     .footer__bottom strong {
       color: #ffffff;
       font-weight: 600;
+    }
+
+    /* MODAL */
+    .cl-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .cl-modal-backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cl-modal-card {
+      position: relative;
+      background: #000000;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 20px;
+      max-width: 520px;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .cl-modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.2s ease;
+    }
+
+    .cl-modal-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .cl-modal-close svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .cl-scroll-body {
+      padding: 20px;
+    }
+
+    .cl-card {
+      border: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+
+    .cl-card-text {
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.72);
+      margin: 0;
+    }
+
+    .cl-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .cl-highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .cl-h-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #f43f5e;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 992px) {
+      .about__showcase {
+        grid-template-columns: 1fr;
+      }
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .events__grid-cards {
+        grid-template-columns: 1fr;
+      }
+      .footer__top {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .stats__grid {
+        grid-template-columns: 1fr;
+      }
+      .footer__nav {
+        grid-template-columns: 1fr;
+      }
+      .nav__nav {
+        display: none;
+      }
+      .nav__toggle {
+        display: flex;
+      }
+      body.menu-open .nav__nav {
+        display: flex;
+        position: fixed;
+        inset: 72px 0 0;
+        background: #000000;
+        flex-direction: column;
+        padding: 24px;
+        z-index: 999;
+      }
+      body.menu-open .nav__links {
+        flex-direction: column;
+        width: 100%;
+        background: transparent;
+        border: none;
+      }
     }
   </style>
 </head>
@@ -2198,9 +1183,392 @@
       <header class="nav" style="height:auto;padding-top:16px;">
         <div class="nav__container">
           <a class="brand" href="/">
-        <img src="ETlogo.png" alt="Eternal Transport Logo" class="brand__logo" style="width:32px;height:32px;object-fit:contain;">
-        <span>Eternal Transport</span>
-      </a>
+            <img src="ETlogo.png" alt="Eternal Transport Logo" class="brand__logo" style="width:32px;height:32px;object-fit:contain;">
+            <span>Eternal Transport</span>
+          </a>
+
+          <nav class="nav__nav" id="site-menu">
+            <ul class="nav__links">
+              <li>
+                <a href="/" class="is-active" style="color:#ffffff;font-weight:600;">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="/aboutus">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <span>About Us</span>
+                </a>
+              </li>
+              <li>
+                <a href="/events">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <span>Events</span>
+                </a>
+              </li>
+              <li>
+                <a href="/news">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
+                  <span>News</span>
+                </a>
+              </li>
+              <li class="nav__item--dropdown">
+                <button class="nav__dropdown-trigger" id="resources-trigger" type="button" aria-expanded="false" aria-haspopup="true">
+                  <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+                  <span>Others</span>
+                  <svg class="nav__chevron" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+                  </svg>
+                </button>
+                <div class="nav__dropdown-menu" id="resources-dropdown" role="menu">
+                  <div class="dropdown__list">
+                    <a href="/terms" class="dropdown__item" role="menuitem">
+                      <div class="dropdown__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                      </div>
+                      <div class="dropdown__content">
+                        <div class="dropdown__title">Terms &amp; Company Policies</div>
+                        <div class="dropdown__desc">Membership rules, event guidelines, code of conduct, and privacy.</div>
+                      </div>
+                    </a>
+                    <a href="/gallery" class="dropdown__item" role="menuitem">
+                      <div class="dropdown__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                      </div>
+                      <div class="dropdown__content">
+                        <div class="dropdown__title">Gallery</div>
+                        <div class="dropdown__desc">Anniversary moments, convoy recaps, and fleet showcases.</div>
+                      </div>
+                    </a>
+                    <a href="/partners" class="dropdown__item" role="menuitem">
+                      <div class="dropdown__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                      </div>
+                      <div class="dropdown__content">
+                        <div class="dropdown__title">Partners</div>
+                        <div class="dropdown__desc">Explore our allied VTCs and community partners.</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="nav__actions">
+            <a class="btn-dark" href="https://truckersmp.com/vtc/74784/apply" target="_blank" rel="noopener">Apply now</a>
+            <button class="nav__toggle" id="menu-toggle" aria-label="Open menu">
+              <span class="bar top"></span>
+              <span class="bar mid"></span>
+              <span class="bar bot"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero__stage">
+        <h1 class="hero__headline rise" style="--i:10;"><span>Where The Road</span><span class="hero__signature">Never End</span></h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: ABOUT US (WITH IMAGE & STATISTICS)
+       ========================================================================== -->
+  <section class="section-about" id="about">
+    <div class="about__container">
+      <div class="about__showcase">
+        <div class="about__narrative">
+          <div class="about__header">
+            <h2 class="section-title">About <span class="sig-font">Us</span></h2>
+          </div>
+          <p class="about__lead">
+            Eternal Transport launched in April 2024, a Turkish VTC on TruckersMP. We're all about building a friendly community where drivers can join us for convoys, share the joy of trucking, and build solid teamwork.
+          </p>
+          <p class="about__subtext">
+            While we love showing off our VTC at events, our main focus is creating a great atmosphere for everyone. Our community enjoys other games too, like GTA V, CS:GO, and plenty of others, making our bond stronger outside of trucking.
+          </p>
+          <div class="about__cta-row">
+            <a class="btn-light" href="/events">Join Next Convoy</a>
+            <a class="btn-outline" href="https://discord.gg/eternaltransport" target="_blank" rel="noopener">Join Our Discord</a>
+          </div>
+        </div>
+
+        <div class="about__media-frame">
+          <img src="bg.png" alt="Community Convoy" class="about__img">
+        </div>
+      </div>
+
+      <!-- Statistics Grid: Drivers, Discord, Staff -->
+      <div class="stats__grid">
+        <div class="stat__card">
+          <span class="stat__num">150+</span>
+          <span class="stat__label">Drivers</span>
+        </div>
+        <div class="stat__card">
+          <span class="stat__num">500+</span>
+          <span class="stat__label">Discord Members</span>
+        </div>
+        <div class="stat__card">
+          <span class="stat__num">25+</span>
+          <span class="stat__label">Staff Members</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: WHAT WE OFFER (4 GLASS CARDS)
+       ========================================================================== -->
+  <section class="stage" id="offer">
+    <div class="offer__intro-wrap">
+      <h2 class="section-title">What We <span class="sig-font">Offer</span></h2>
+    </div>
+    <div class="cards">
+      <article class="card card--speed">
+        <div class="card__header">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <span class="card__tag">Convoy Events</span>
+        </div>
+        <h3 class="card__title">Regular Public &amp; Private Convoys</h3>
+        <p class="card__desc">We host and participate in weekly convoys across ETS2 and ATS on TruckersMP, bringing our fleet together with custom routes and organized dispatch.</p>
+      </article>
+
+      <article class="card card--context">
+        <div class="card__header">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="card__tag">Community</span>
+        </div>
+        <h3 class="card__title">Multi-Gaming &amp; Active Discord</h3>
+        <p class="card__desc">Beyond virtual trucking, we play GTA V, CS:GO, and more together. Our welcoming Discord server is the vibrant heart of everything we do.</p>
+      </article>
+
+      <article class="card card--connections">
+        <div class="card__header">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <span class="card__tag">Fleet Showcase</span>
+        </div>
+        <h3 class="card__title">Official Liveries &amp; DLC Support</h3>
+        <p class="card__desc">Ride in style with our official company paint jobs, customized fleet trucks, and regular photo shoots featured across social media.</p>
+      </article>
+
+      <article class="card card--staff">
+        <div class="card__header">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="card__tag">Staff Team</span>
+        </div>
+        <h3 class="card__title">Active and Supportive Staff</h3>
+        <p class="card__desc">Our staff team works hard behind the scenes to keep everything running smoothly. They're always ready to help and make sure the community stays friendly and enjoyable for everyone.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: UPCOMING EVENTS (3 CARDS CONNECTED TO TRUCKERSMP API)
+       ========================================================================== -->
+  <section class="section-events" id="events">
+    <div class="events__container">
+      <div class="events__header">
+        <h2 class="section-title">Upcoming <span class="sig-font">Event</span></h2>
+      </div>
+
+      <div class="events__grid-cards" id="events-container">
+        <!-- Event Card 1 -->
+        <article class="event-card">
+          <div class="event-card__banner-wrap">
+            <img src="https://static.truckersmp.com/images/event/cover/34267.1778886977.png" alt="ETERNAL TRANSPORT | SEPTEMBER CONVOY 2026" class="event-card__banner" onerror="this.onerror=null; this.src='https://static.truckersmp.com/images/event/map/34267.1773874654.png';">
+            <div class="event-card__date-badge">
+              <span class="event-card__badge-day">18</span>
+              <span class="event-card__badge-month">SEP</span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__title">ETERNAL TRANSPORT | SEPTEMBER CONVOY 2026</h3>
+            <div class="event-card__meta-top">
+              <span class="event-card__game">ETS2</span>
+              <span class="event-card__server">Simulation 2</span>
+            </div>
+            <div class="event-card__route">
+              <span>Munich</span>
+              <span class="event-card__route-arrow">&rarr;</span>
+              <span>Innsbruck</span>
+            </div>
+            <div class="event-card__times">
+              <div class="event-card__time-row">
+                <svg class="event-card__time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Meetup: Sep 18, 2026, 17:00 UTC</span>
+              </div>
+              <div class="event-card__time-row">
+                <svg class="event-card__time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Start: Sep 18, 2026, 18:00 UTC</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-card__footer">
+            <a class="event-card__btn event-card__btn--more" href="https://truckersmp.com/events/34267-eternal-transport%7C-september-convoy2026" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span>More Info</span>
+            </a>
+            <a class="event-card__btn event-card__btn--page" href="https://truckersmp.com/events/34267" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Event Page</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Event Card 2 -->
+        <article class="event-card">
+          <div class="event-card__banner-wrap">
+            <img src="https://static.truckersmp.com/images/event/cover/35049.1779058116.png" alt="ETERNAL TRANSPORT | OCTOBER CONVOY 2026" class="event-card__banner" onerror="this.onerror=null; this.src='https://static.truckersmp.com/images/event/map/35049.1779126586.png';">
+            <div class="event-card__date-badge">
+              <span class="event-card__badge-day">24</span>
+              <span class="event-card__badge-month">OCT</span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__title">ETERNAL TRANSPORT | OCTOBER CONVOY 2026</h3>
+            <div class="event-card__meta-top">
+              <span class="event-card__game">ETS2</span>
+              <span class="event-card__server">Simulation 2</span>
+            </div>
+            <div class="event-card__route">
+              <span>Brussels</span>
+              <span class="event-card__route-arrow">&rarr;</span>
+              <span>Frankfurt am Main</span>
+            </div>
+            <div class="event-card__times">
+              <div class="event-card__time-row">
+                <svg class="event-card__time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Meetup: Oct 24, 2026, 17:00 UTC</span>
+              </div>
+              <div class="event-card__time-row">
+                <svg class="event-card__time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Start: Oct 24, 2026, 18:00 UTC</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-card__footer">
+            <a class="event-card__btn event-card__btn--more" href="https://truckersmp.com/events/35049-eternal-transport%7C-october-convoy2026" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span>More Info</span>
+            </a>
+            <a class="event-card__btn event-card__btn--page" href="https://truckersmp.com/events/35049" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Event Page</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Event Card 3 -->
+        <article class="event-card">
+          <div class="event-card__banner-wrap">
+            <img src="https://static.truckersmp.com/images/event/cover/35882.1779573568.png" alt="ETERNAL TRANSPORT | NOVEMBER CONVOY 2026" class="event-card__banner" onerror="this.onerror=null; this.src='https://static.truckersmp.com/images/event/map/35882.1779644358.png';">
+            <div class="event-card__date-badge">
+              <span class="event-card__badge-day">22</span>
+              <span class="event-card__badge-month">NOV</span>
+            </div>
+          </div>
+          <div class="event-card__body">
+            <h3 class="event-card__title">ETERNAL TRANSPORT | NOVEMBER CONVOY 2026</h3>
+            <div class="event-card__meta-top">
+              <span class="event-card__game">ETS2</span>
+              <span class="event-card__server">To be determined</span>
+            </div>
+            <div class="event-card__route">
+              <span>Montpellier</span>
+              <span class="event-card__route-arrow">&rarr;</span>
+              <span>Bayonne</span>
+            </div>
+            <div class="event-card__times">
+              <div class="event-card__time-row">
+                <svg class="event-card__time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Meetup: Nov 22, 2026, 17:00 UTC</span>
+              </div>
+              <div class="event-card__time-row">
+                <svg class="event-card__time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Start: Nov 22, 2026, 18:00 UTC</span>
+              </div>
+            </div>
+          </div>
+          <div class="event-card__footer">
+            <a class="event-card__btn event-card__btn--more" href="https://truckersmp.com/events/35882-eternal-transport%7C-november-convoy2026" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span>More Info</span>
+            </a>
+            <a class="event-card__btn event-card__btn--page" href="https://truckersmp.com/events/35882" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Event Page</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: OUR PARTNERS
+       ========================================================================== -->
+  <section class="section-partners" id="partners">
+    <div class="partners__container">
+      <div class="partners__header">
+        <h2 class="section-title">Our <span class="sig-font">Partners</span></h2>
+      </div>
+
+      <div class="partners__marquee-wrapper">
+        <div class="partners__track" id="partners-track">
+          <!-- 1. United Convoys -->
+          <a class="partner-logo-card" href="https://truckersmp.com/vtc/78874" target="_blank" rel="noopener" title="United Convoys">
+            <img src="https://static.truckersmp.com/images/vtc/logo/78874.1741464190.png" alt="United Convoys" class="partner-logo-img" loading="lazy">
+          </a>
+          <!-- 2. INDIAN GROUP -->
+          <a class="partner-logo-card" href="https://truckersmp.com/vtc/76045" target="_blank" rel="noopener" title="INDIAN GROUP">
+            <img src="https://static.truckersmp.com/images/vtc/logo/76045.1749322103.png" alt="INDIAN GROUP" class="partner-logo-img" loading="lazy">
+          </a>
+          <!-- 3. GTLegion -->
+          <a class="partner-logo-card" href="https://truckersmp.com/vtc/58774" target="_blank" rel="noopener" title="GTLegion">
+            <img src="https://static.truckersmp.com/images/vtc/logo/58774.1776070480.png" alt="GTLegion" class="partner-logo-img" loading="lazy">
+          </a>
+          <!-- 4. Ghost Express -->
+          <a class="partner-logo-card" href="https://truckersmp.com/vtc/53371" target="_blank" rel="noopener" title="Ghost Express">
+            <img src="https://static.truckersmp.com/images/vtc/logo/53371.1783062800.png" alt="Ghost Express" class="partner-logo-img" loading="lazy">
+          </a>
+          <!-- 5. Malkoçoğlu Logistics -->
+          <a class="partner-logo-card" href="https://truckersmp.com/vtc/72305" target="_blank" rel="noopener" title="Malkoçoğlu Logistics">
+            <img src="https://static.truckersmp.com/images/vtc/logo/72305.1770493881.png" alt="Malkoçoğlu Logistics" class="partner-logo-img" loading="lazy">
+          </a>
+          <!-- 6. Premium Events -->
+          <a class="partner-logo-card" href="https://truckersmp.com/vtc/88278" target="_blank" rel="noopener" title="Premium Events">
+            <img src="https://static.truckersmp.com/images/vtc/logo/88278.1775168262.png" alt="Premium Events" class="partner-logo-img" loading="lazy">
+          </a>
+          <!-- 7. Pean Logistics -->
+          <a class="partner-logo-card" href="https://truckersmp.com/vtc/64631" target="_blank" rel="noopener" title="Pean Logistics">
+            <img src="https://static.truckersmp.com/images/vtc/logo/64631.1735910236.png" alt="Pean Logistics" class="partner-logo-img" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="/" style="display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#ffffff;font-weight:700;font-size:17px;">
+            <img src="ETlogo.png" alt="Eternal Transport Logo" class="brand__logo" style="width:32px;height:32px;object-fit:contain;">
+            <span>Eternal Transport</span>
+          </a>
           <p class="footer__tagline">Where The Road Never End &bull; Virtual Trucking &amp; Gaming Community</p>
           <div class="footer__social">
             <a href="https://www.youtube.com/@EternalTransport" target="_blank" rel="noopener" class="social-link" title="YouTube" aria-label="YouTube">
@@ -2260,433 +1628,6 @@
     </div>
   </footer>
 
-  
-
-  
-
-
-<script>
-    // --- Mobile Navigation Menu ---
-    (function () {
-      const toggle = document.getElementById('menu-toggle');
-      const menu = document.getElementById('site-menu');
-      if (!toggle || !menu) return;
-
-      function isOpen() {
-        return toggle.getAttribute('aria-expanded') === 'true';
-      }
-
-      function setMenu(open) {
-        toggle.setAttribute('aria-expanded', String(open));
-        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-        menu.classList.toggle('is-open', open);
-        document.body.classList.toggle('menu-open', open);
-      }
-
-      toggle.addEventListener('click', function () {
-        setMenu(!isOpen());
-      });
-
-      menu.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          setMenu(false);
-        });
-      });
-
-      window.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && isOpen()) {
-          setMenu(false);
-          toggle.focus();
-        }
-      });
-
-      window.addEventListener('resize', function () {
-        if (window.innerWidth > 900 && isOpen()) {
-          setMenu(false);
-        }
-      });
-    })();
-
-    // --- Resources Dropdown Popover ---
-    (function () {
-      const dropdownItem = document.querySelector('.nav__item--dropdown');
-      const trigger = document.getElementById('resources-trigger');
-      if (!dropdownItem || !trigger) return;
-
-      trigger.addEventListener('click', function (e) {
-        e.stopPropagation();
-        const expanded = trigger.getAttribute('aria-expanded') === 'true';
-        trigger.setAttribute('aria-expanded', String(!expanded));
-        dropdownItem.classList.toggle('is-active', !expanded);
-      });
-
-      document.addEventListener('click', function (e) {
-        if (!dropdownItem.contains(e.target)) {
-          trigger.setAttribute('aria-expanded', 'false');
-          dropdownItem.classList.remove('is-active');
-        }
-      });
-
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && dropdownItem.classList.contains('is-active')) {
-          trigger.setAttribute('aria-expanded', 'false');
-          dropdownItem.classList.remove('is-active');
-          trigger.focus();
-        }
-      });
-    })();
-
-    (function () {
-      // 1. Generate Gauge Ticks
-      const ticksGroup = document.getElementById('gaugeTicks');
-      if (ticksGroup) {
-        let ticksHTML = '';
-        for (let i = 0; i <= 22; i++) {
-          const angle = (190 + i * 5) * Math.PI / 180;
-          const outer = 142;
-          const inner = i % 5 === 0 ? 129 : 133;
-          const sw = i % 5 === 0 ? 1.5 : 1;
-          const x1 = (163 + inner * Math.cos(angle)).toFixed(2);
-          const y1 = (163 + inner * Math.sin(angle)).toFixed(2);
-          const x2 = (163 + outer * Math.cos(angle)).toFixed(2);
-          const y2 = (163 + outer * Math.sin(angle)).toFixed(2);
-          ticksHTML += `<line class="tick" x1="${x1}" y1="${y1}" x2="${x2}" stroke="rgba(255,188,210,.34)" stroke-width="${sw}"/>`;
-        }
-        ticksGroup.innerHTML = ticksHTML;
-      }
-
-      // 2. 7-Row Bitmap Glyphs for LED Dot Type
-      const GLYPHS = {
-        "0": ["01110", "10001", "10011", "10101", "11001", "10001", "01110"],
-        "1": ["010", "110", "010", "010", "010", "010", "111"],
-        "2": ["01110", "10001", "00001", "00010", "00100", "01000", "11111"],
-        "3": ["11110", "00001", "00001", "01110", "00001", "00001", "11110"],
-        "4": ["00010", "00110", "01010", "10010", "11111", "00010", "00010"],
-        "5": ["11111", "10000", "10000", "11110", "00001", "00001", "11110"],
-        "6": ["01110", "10000", "10000", "11110", "10001", "10001", "01110"],
-        "7": ["11111", "00001", "00010", "00100", "01000", "01000", "01000"],
-        "8": ["01110", "10001", "10001", "01110", "10001", "10001", "01110"],
-        "9": ["01110", "10001", "10001", "01111", "00001", "00001", "01110"],
-        ".": ["0", "0", "0", "0", "0", "0", "1"],
-        "I": ["111", "010", "010", "010", "010", "010", "111"],
-        "a": ["00000", "00000", "01110", "00001", "01111", "10001", "01111"],
-        "e": ["00000", "00000", "01110", "10001", "11111", "10000", "01110"],
-        "g": ["00000", "00000", "01111", "10001", "01111", "00001", "01110"],
-        "i": ["1", "0", "1", "1", "1", "1", "1"],
-        "l": ["10", "10", "10", "10", "10", "10", "01"],
-        "n": ["00000", "00000", "11110", "10001", "10001", "10001", "10001"],
-        "t": ["010", "010", "111", "010", "010", "010", "001"],
-        "r": ["00000", "00000", "10110", "11001", "10000", "10000", "10000"]
-      };
-
-      document.querySelectorAll('[data-dots]').forEach(el => {
-        const text = el.getAttribute('data-dots');
-        const isWord = el.classList.contains('dot-word');
-        const isContext = !!el.closest('.metric--context');
-        const pitchX = isWord ? 4 : 5;
-        const pitchY = 4;
-        const gap = 1;
-        const dotRadius = isWord ? 1.8 : (isContext ? 2.32 : 1.55);
-
-        let x = 0;
-        const circles = [];
-        for (let i = 0; i < text.length; i++) {
-          const ch = text[i];
-          const glyph = GLYPHS[ch];
-          if (!glyph) continue;
-          const cols = glyph[0].length;
-          for (let r = 0; r < 7; r++) {
-            for (let c = 0; c < cols; c++) {
-              if (glyph[r][c] === '1') {
-                const cx = (x + c * pitchX + 1.55).toFixed(2);
-                const cy = (r * pitchY + 1.55).toFixed(2);
-                circles.push(`<circle cx="${cx}" cy="${cy}" r="${dotRadius}"/>`);
-              }
-            }
-          }
-          x += (cols + gap) * pitchX;
-        }
-
-        el.innerHTML = `<svg class="dot-svg" viewBox="0 0 ${x} 28" fill="currentColor">${circles.join('')}</svg>`;
-      });
-
-      // 3. Entrance Animation Completion / Failsafe Cleanup
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        document.documentElement.classList.remove('entrance-active');
-        if (window.__entranceFailsafe) clearTimeout(window.__entranceFailsafe);
-      } else {
-        const isMobile = window.innerWidth <= 767;
-        const target = isMobile
-          ? document.querySelector('.card--speed .learn-more')
-          : document.querySelector('.card--connections .learn-more');
-
-        if (target) {
-          target.addEventListener('animationend', () => {
-            if (window.__entranceFailsafe) clearTimeout(window.__entranceFailsafe);
-            document.documentElement.classList.remove('entrance-active');
-          }, { once: true });
-        }
-      }
-    })();
-  
-            // ==========================================================================
-    // Changelog Modal (Auto-popup only for new visitors, centered middle of screen)
-    // ==========================================================================
-    function initChangelogModal() {
-      const modal = document.getElementById('cl-modal');
-      const closeBtn = document.getElementById('cl-modal-close');
-      const launcherBtn = document.getElementById('cl-launcher-btn');
-      const storageKey = 'et_changelog_v3_seen';
-
-      if (!modal) return;
-
-      function openModal() {
-        modal.classList.add('is-open');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeModal() {
-        modal.classList.remove('is-open');
-        document.body.style.overflow = '';
-        try {
-          localStorage.setItem(storageKey, 'true');
-        } catch (e) {}
-      }
-
-      // Auto-open for new visitors or when ?updates or ?changelog query is in URL
-      try {
-        const urlParams = new URLSearchParams(window.location.search);
-        const forceOpen = urlParams.has('updates') || urlParams.has('changelog');
-        const hasSeen = localStorage.getItem(storageKey);
-        if (forceOpen || !hasSeen) {
-          setTimeout(openModal, 750);
-        }
-      } catch (e) {
-        setTimeout(openModal, 750);
-      }
-
-      if (closeBtn) closeBtn.addEventListener('click', closeModal);
-      if (launcherBtn) launcherBtn.addEventListener('click', openModal);
-
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
-      });
-
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('is-open')) {
-          closeModal();
-        }
-      });
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initChangelogModal);
-    } else {
-      initChangelogModal();
-    }
-
-  
-    // ==========================================================================
-    // TruckersMP Event API Integration (TMP VTC ID: 74784) - Max 3 Events
-    // ==========================================================================
-    (async function initTruckersMpEvents() {
-      const vtcId = "74784";
-      const container = document.getElementById("events-container");
-      if (!container) return;
-
-      const endpoints = [
-        '/api/events',
-        'events.json',
-        `https://api.truckersmp.com/v2/vtc/${vtcId}/events`,
-        `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://api.truckersmp.com/v2/vtc/${vtcId}/events`)}`
-      ];
-
-      for (const url of endpoints) {
-        try {
-          const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
-          if (!res.ok) continue;
-          const data = await res.json();
-          const list = data && (data.response || data);
-          if (Array.isArray(list) && list.length > 0) {
-            renderEvents(list);
-            break;
-          }
-        } catch (err) {
-          // Continue to next endpoint
-        }
-      }
-
-      function parseEventDate(str) {
-        if (!str) return null;
-        try {
-          return new Date(str.replace(' ', 'T') + (str.includes('Z') ? '' : 'Z'));
-        } catch (e) {
-          return null;
-        }
-      }
-
-      function formatShortDate(d) {
-        if (!d || isNaN(d)) return { day: "TBD", month: "TBD", full: "Date TBA" };
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        const day = d.getUTCDate();
-        const month = months[d.getUTCMonth()];
-        const year = d.getUTCFullYear();
-        const hours = String(d.getUTCHours()).padStart(2, '0');
-        const mins = String(d.getUTCMinutes()).padStart(2, '0');
-        return {
-          day: String(day),
-          month: month.toUpperCase(),
-          full: `${month} ${day}, ${year}, ${hours}:${mins} UTC`
-        };
-      }
-
-      function renderEvents(events) {
-        if (!events || events.length === 0) return;
-        const nowStr = new Date().toISOString().slice(0, 10);
-        const upcoming = events
-          .filter(ev => {
-            const start = ev.start_at || "";
-            return start >= nowStr || !start;
-          })
-          .sort((a, b) => (a.start_at || "").localeCompare(b.start_at || ""));
-
-        const top3 = (upcoming.length >= 3 ? upcoming : events).slice(0, 3);
-
-        container.innerHTML = top3.map(ev => {
-          const title = (ev.name || "TruckersMP Convoy").toUpperCase();
-          const startDate = parseEventDate(ev.start_at);
-          const meetupDate = ev.meetup_at ? parseEventDate(ev.meetup_at) : (startDate ? new Date(startDate.getTime() - 60 * 60 * 1000) : null);
-          const startFmt = formatShortDate(startDate);
-          const meetupFmt = formatShortDate(meetupDate);
-
-          const game = ev.game || "ETS2";
-          const server = (ev.server && ev.server.name) || "To be determined";
-          const departure = (ev.departure && ev.departure.city) || "TBD";
-          const arrive = (ev.arrive && ev.arrive.city) || "TBD";
-          const banner = ev.banner || ev.cover || (ev.id ? `https://static.truckersmp.com/images/event/cover/${ev.id}.png` : "https://static.truckersmp.com/images/event/cover/34267.1778886977.png");
-          const fallbackMap = ev.map || (ev.id ? `https://static.truckersmp.com/images/event/map/${ev.id}.png` : "https://static.truckersmp.com/images/event/map/34267.1773874654.png");
-          const eventUrl = ev.url ? (`https://truckersmp.com${ev.url}`) : (ev.slug ? `https://truckersmp.com/events/${ev.slug}` : `https://truckersmp.com/events/${ev.id || ''}`);
-          const detailUrl = ev.id ? `/events/${ev.id}` : eventUrl;
-          const tmpUrl = ev.id ? `https://truckersmp.com/events/${ev.id}` : eventUrl;
-
-          return `
-            <article class="event-card">
-              <div class="event-card__banner-wrap">
-                <img src="${banner}" alt="${title}" class="event-card__banner" onerror="this.onerror=null; this.src='${fallbackMap}';">
-                <div class="event-card__date-badge">
-                  <span class="event-card__badge-day">${startFmt.day}</span>
-                  <span class="event-card__badge-month">${startFmt.month}</span>
-                </div>
-              </div>
-              <div class="event-card__body">
-                <h3 class="event-card__title">${title}</h3>
-                <div class="event-card__meta-top">
-                  <span class="event-card__game">${game}</span>
-                  <span class="event-card__server">${server}</span>
-                </div>
-                <div class="event-card__route">
-                  <span>${departure}</span>
-                  <span class="event-card__route-arrow">&rarr;</span>
-                  <span>${arrive}</span>
-                </div>
-                <div class="event-card__times">
-                  <div class="event-card__time-row">
-                    <svg class="event-card__time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    <span>Meetup: ${meetupFmt.full}</span>
-                  </div>
-                  <div class="event-card__time-row">
-                    <svg class="event-card__time-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                    <span>Start: ${startFmt.full}</span>
-                  </div>
-                </div>
-              </div>
-              <div class="event-card__footer">
-                <a class="event-card__btn event-card__btn--more" href="${detailUrl}">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                  <span>More Info</span>
-                </a>
-                <a class="event-card__btn event-card__btn--page" href="${tmpUrl}" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                  <span>Event Page</span>
-                </a>
-              </div>
-            </article>
-          `;
-        }).join('');
-      }
-    })();
-
-    // Dynamic TruckersMP Partners API Integration
-    (async function initPartners() {
-      const track = document.getElementById('partners-track');
-      if (!track) return;
-
-      const vtcId = '74784';
-      const endpoints = [
-        '/api/partners',
-        'partners.json',
-        `https://api.truckersmp.com/v2/vtc/${vtcId}/partners`,
-        `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://api.truckersmp.com/v2/vtc/${vtcId}/partners`)}`
-      ];
-
-      for (const url of endpoints) {
-        try {
-          const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
-          if (!res.ok) continue;
-          const data = await res.json();
-          const list = data && data.response && data.response.partners;
-          if (Array.isArray(list) && list.length > 0) {
-            renderPartners(list);
-            break;
-          }
-        } catch (e) {
-          // Continue to next endpoint
-        }
-      }
-
-      function renderPartners(partners) {
-        const accepted = partners.filter(p => p && p.status === 'Accepted');
-        if (accepted.length === 0) return;
-
-        const mapped = accepted.map(item => {
-          const sender = item.sender || {};
-          const receiver = item.receiver || {};
-          const p = (String(sender.id) === vtcId) ? receiver : sender;
-          return {
-            id: p.id,
-            name: p.name || 'Partner VTC',
-            logo: p.logo,
-            website: p.website || `https://truckersmp.com/vtc/${p.id}`
-          };
-        }).filter(p => p.logo);
-
-        if (mapped.length === 0) return;
-
-        // Duplicate the list once for seamless infinite marquee loop
-        const loopList = [...mapped, ...mapped];
-
-        track.innerHTML = loopList.map(p => `
-          <a class="partner-logo-card" href="https://truckersmp.com/vtc/${p.id}" target="_blank" rel="noopener" title="${p.name.replace(/"/g, '&quot;')}">
-            <img src="${p.logo}" alt="${p.name.replace(/"/g, '&quot;')}" class="partner-logo-img" loading="lazy" onerror="this.style.display='none';">
-          </a>
-        `).join('');
-      }
-    })();
-
-  </script>
-
-      <!-- Floating Changelog Trigger Button -->
-  <button class="cl-launcher-btn" id="cl-launcher-btn" aria-label="View Website Updates & Changelog" title="Website Updates">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M20 12v10H4V12"/>
-      <path d="M2 7h20v5H2z"/>
-      <path d="M12 22V7"/>
-      <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
-      <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
-    </svg>
-    <span class="cl-launcher-dot" aria-hidden="true"></span>
-  </button>
-
   <!-- Centered Changelog Modal Dialog -->
   <div class="cl-modal-backdrop" id="cl-modal" role="dialog" aria-modal="true" aria-labelledby="cl-modal-title">
     <div class="cl-modal-card">
@@ -2744,5 +1685,88 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // --- Mobile Navigation Menu ---
+    (function () {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('site-menu');
+      if (!toggle || !menu) return;
+
+      function isOpen() {
+        return toggle.getAttribute('aria-expanded') === 'true';
+      }
+
+      function setMenu(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        document.body.classList.toggle('menu-open', open);
+      }
+
+      toggle.addEventListener('click', function () {
+        setMenu(!isOpen());
+      });
+
+      document.querySelectorAll('.nav__links a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          setMenu(false);
+        });
+      });
+    })();
+
+    // --- Resources Dropdown Popover ---
+    (function () {
+      const dropdownItem = document.querySelector('.nav__item--dropdown');
+      const trigger = document.getElementById('resources-trigger');
+      if (!dropdownItem || !trigger) return;
+
+      trigger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const isOpen = dropdownItem.classList.toggle('is-open');
+        trigger.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!dropdownItem.contains(e.target)) {
+          dropdownItem.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    })();
+
+    // --- Centered Changelog Modal ---
+    function initChangelogModal() {
+      const modal = document.getElementById('cl-modal');
+      const closeBtn = document.getElementById('cl-modal-close');
+      if (!modal) return;
+
+      function closeModal() {
+        modal.classList.remove('is-open');
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+      }
+
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      const seenKey = 'et_seen_v3_update';
+      if (!localStorage.getItem(seenKey)) {
+        setTimeout(function () {
+          modal.classList.add('is-open');
+          localStorage.setItem(seenKey, 'true');
+        }, 800);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initChangelogModal);
+    } else {
+      initChangelogModal();
+    }
+  </script>
 </body>
 </html>
